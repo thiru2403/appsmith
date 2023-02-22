@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "validation",
+    "pageId": "New loan page",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "New loan page_validation",
+  "deleted": false,
+  "gitSyncId": "63e0d31cef0ac73ef4acc806_63edddb575933522b31f7c35"
+}

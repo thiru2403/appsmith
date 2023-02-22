@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "loan_js_auto",
+    "pageId": "New loan page",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "New loan page_loan_js_auto",
+  "deleted": false,
+  "gitSyncId": "63e0d31cef0ac73ef4acc806_63f5e71adb642f4c0d66d9ed"
+}
