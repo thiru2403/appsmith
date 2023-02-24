@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 820,
+          "bottomRow": 860,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -7988,8 +7988,8 @@
               "dynamicPropertyPathList": [],
               "displayName": "Tabs",
               "iconSVG": "/static/media/icon.74a6d653c8201e66f1cd367a3fba2657.svg",
-              "topRow": 4,
-              "bottomRow": 82,
+              "topRow": 8,
+              "bottomRow": 86,
               "parentRowSpace": 10,
               "type": "TABS_WIDGET",
               "hideCard": false,
@@ -8001,7 +8001,7 @@
                   "key": "onTabSelected"
                 }
               ],
-              "leftColumn": 3,
+              "leftColumn": 10,
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
@@ -8719,6 +8719,12 @@
                         },
                         {
                           "key": "primaryColumns.EditActions1.isDiscardDisabled"
+                        },
+                        {
+                          "key": "primaryColumns.customColumn7.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.customColumn8.computedValue"
                         }
                       ],
                       "leftColumn": 1,
@@ -8763,6 +8769,8 @@
                       "widgetName": "Table1",
                       "defaultPageSize": 0,
                       "columnOrder": [
+                        "customColumn7",
+                        "customColumn8",
                         "customColumn1",
                         "customColumn2",
                         "customColumn3",
@@ -9225,7 +9233,7 @@
                           "fontStyle": "",
                           "enableFilter": true,
                           "enableSort": true,
-                          "isVisible": true,
+                          "isVisible": false,
                           "isDisabled": false,
                           "isCellEditable": false,
                           "isEditable": false,
@@ -9330,6 +9338,60 @@
                           "discardButtonVariant": "TERTIARY",
                           "isSaveDisabled": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( !Table1.updatedRowIndices.includes(currentIndex)))}}",
                           "isDiscardDisabled": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( !Table1.updatedRowIndices.includes(currentIndex)))}}"
+                        },
+                        "customColumn7": {
+                          "allowCellWrapping": false,
+                          "index": 10,
+                          "width": 150,
+                          "originalId": "customColumn7",
+                          "id": "customColumn7",
+                          "alias": "Loan Number",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": true,
+                          "label": "Loan Number",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow.newloans.loanNumber))}}",
+                          "validation": {},
+                          "buttonStyle": "rgb(3, 179, 101)",
+                          "labelColor": "#FFFFFF"
+                        },
+                        "customColumn8": {
+                          "allowCellWrapping": false,
+                          "index": 10,
+                          "width": 150,
+                          "originalId": "customColumn8",
+                          "id": "customColumn8",
+                          "alias": "Name",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": true,
+                          "label": "Name",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow.borrower.name))}}",
+                          "validation": {},
+                          "buttonStyle": "rgb(3, 179, 101)",
+                          "labelColor": "#FFFFFF"
                         }
                       },
                       "key": "ejsdr0zuve",
@@ -10086,9 +10148,6 @@
                           "key": "primaryColumns.Remark.computedValue"
                         },
                         {
-                          "key": "primaryColumns.customColumn2.computedValue"
-                        },
-                        {
                           "key": "primaryColumns.customColumn3.computedValue"
                         },
                         {
@@ -10099,6 +10158,9 @@
                         },
                         {
                           "key": "primaryColumns.customColumn1.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.customColumn2.computedValue"
                         }
                       ],
                       "leftColumn": 4,
@@ -10530,7 +10592,7 @@
                           "label": "LoanNumber",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( Get_Loans.data[0].newloans.loanNumber))}}",
+                          "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow.newloans.loanNumber))}}",
                           "validation": {},
                           "buttonStyle": "rgb(3, 179, 101)",
                           "labelColor": "#FFFFFF"
@@ -10557,7 +10619,7 @@
                           "label": "Name",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( Get_Loans.data[0].borrower.name))}}",
+                          "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow.borrower.name))}}",
                           "validation": {},
                           "buttonStyle": "rgb(3, 179, 101)",
                           "labelColor": "#FFFFFF"
@@ -14672,7 +14734,7 @@
               "key": "7zlltcguvg",
               "backgroundColor": "#FFFFFF",
               "isDeprecated": false,
-              "rightColumn": 59,
+              "rightColumn": 64,
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "bfmudpr57u",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -14735,10 +14797,10 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "originalTopRow": 4,
+              "originalTopRow": 8,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 82,
+              "originalBottomRow": 86,
               "minDynamicHeight": 10
             },
             {
