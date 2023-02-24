@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "Insert_Expense_1",
+    "name": "findById_branch",
     "datasource": {
       "name": "RoyalFinance",
       "pluginId": "mongo-plugin",
@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Dashboard page",
+    "pageId": "New loan page",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -29,13 +29,13 @@
           }
         },
         "body": {
-          "data": "{\n  \"insert\": \"Expenses\",\n  \"documents\": [\n    {\n      \"_id\": ObjectId(\"a_valid_object_id_hex\"),\n    }\n  ]\n}\n"
+          "data": "{\n  \"find\": \"ManageBranch\",\n  \"filter\": {\n    \"_id\": ObjectId(\"id_to_query_with\")\n  }\n}\n"
         },
         "collection": {
-          "data": "Expenses"
+          "data": "ManageBranch"
         },
         "command": {
-          "data": "INSERT"
+          "data": "FIND"
         },
         "count": {
           "query": {
@@ -59,10 +59,10 @@
           }
         },
         "find": {
-          "skip": {
-            "data": ""
-          },
           "query": {
+            "data": "{\"_id\": ObjectId({{branchSelect.selectedOptionValue}})}"
+          },
+          "skip": {
             "data": ""
           },
           "sort": {
@@ -77,7 +77,7 @@
         },
         "insert": {
           "documents": {
-            "data": "[{\n\t\"branchName\": \"{{selectExpenseBranch.selectedOptionValue}}\",\n\t\"expensesName\": \"{{expenseName.text}}\",\n      \"amount\": \"{{ExpenseAmount.text}}\",\n       \"expensesBy\": \"{{expensesBy.selectedOptionValue}}\",\n\t\"expensesCategory\":\"{{expenseCategory.selectedOptionLabel}}\"\n}]"
+            "data": ""
           }
         },
         "smartSubstitution": {
@@ -96,28 +96,24 @@
         }
       }
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
-        "key": "formData.insert.documents.data"
+        "key": "formData.find.query.data"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "ExpenseAmount.text",
-      "expenseCategory.selectedOptionLabel",
-      "expenseName.text",
-      "expensesBy.selectedOptionValue",
-      "selectExpenseBranch.selectedOptionValue"
+      "branchSelect.selectedOptionValue"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Dashboard page_Insert_Expense_1",
+  "id": "New loan page_findById_branch",
   "deleted": false,
-  "gitSyncId": "63e0d31cef0ac73ef4acc806_63f3451d62c0d536c41bf17d"
+  "gitSyncId": "63e0d31cef0ac73ef4acc806_63f870b007d3496c6b0bdcf8"
 }

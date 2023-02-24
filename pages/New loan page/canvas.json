@@ -2861,12 +2861,16 @@
                                         },
                                         {
                                           "key": "borderRadius"
+                                        },
+                                        {
+                                          "key": "validation"
                                         }
                                       ],
                                       "labelStyle": "",
-                                      "inputType": "TEXT",
+                                      "inputType": "NUMBER",
                                       "placeholderText": "Enter Your Aadhaar Number",
                                       "isDisabled": false,
+                                      "validation": "{{coBorrowerAadhaar.inputText.length == 12}}",
                                       "isRequired": true,
                                       "dynamicHeight": "FIXED",
                                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -2874,7 +2878,7 @@
                                       "isVisible": true,
                                       "version": 2,
                                       "isLoading": false,
-                                      "regex": "^\\d{4}\\s\\d{4}\\s\\d{4}$",
+                                      "regex": "",
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "originalBottomRow": 41,
                                       "widgetName": "coBorrowerAadhaar",
@@ -2897,7 +2901,7 @@
                                       "isDeprecated": false,
                                       "rightColumn": 30,
                                       "widgetId": "munf4rzr0t",
-                                      "errorMessage": "Enter Valid aadhar number with space",
+                                      "errorMessage": "Enter Valid aadhar number",
                                       "label": "Aadhaar Number",
                                       "parentId": "1zpq4lgi32",
                                       "labelAlignment": "left",
@@ -3400,7 +3404,7 @@
                                       "overflow": "NONE",
                                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                                       "dynamicTriggerPathList": [],
-                                      "leftColumn": 1.5,
+                                      "leftColumn": 2,
                                       "dynamicBindingPathList": [
                                         {
                                           "key": "truncateButtonColor"
@@ -3414,10 +3418,10 @@
                                       ],
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                                      "text": "VEHICLE DEATAILS",
+                                      "text": "VEHICLE DETAILS",
                                       "key": "lm1kcadhch",
                                       "isDeprecated": false,
-                                      "rightColumn": 25.5,
+                                      "rightColumn": 26,
                                       "textAlign": "LEFT",
                                       "dynamicHeight": "AUTO_HEIGHT",
                                       "widgetId": "0hvy968wwz",
@@ -3647,15 +3651,15 @@
                                       "widgetId": "of1fyhkk1w",
                                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                                       "showStepArrows": false,
-                                      "errorMessage": "Enter Valid Vehicle Number In Caps With Space",
+                                      "errorMessage": "Enter Valid Vehicle Number In Caps ",
                                       "isVisible": true,
-                                      "label": "Vehicle Deatils",
+                                      "label": "Vehicle Number",
                                       "version": 2,
                                       "parentId": "4g5w5pfxen",
                                       "labelAlignment": "left",
                                       "renderMode": "CANVAS",
                                       "isLoading": false,
-                                      "regex": "^[A-Z]{2}\\s[0-9]{2}\\s[A-Z]{2}\\s[0-9]{4}$",
+                                      "regex": "^[A-Z]{2}[0-9]{2}[A-Z]{2}[0-9]{4}$",
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "maxDynamicHeight": 9000,
                                       "iconAlign": "left",
@@ -5031,13 +5035,16 @@
                                         },
                                         {
                                           "key": "borderRadius"
+                                        },
+                                        {
+                                          "key": "defaultText"
                                         }
                                       ],
                                       "labelPosition": "Left",
                                       "labelStyle": "",
-                                      "inputType": "TEXT",
+                                      "inputType": "NUMBER",
                                       "placeholderText": "Processing Fees",
-                                      "isDisabled": false,
+                                      "isDisabled": true,
                                       "key": "hr9o4hb3fh",
                                       "labelTextSize": "0.875rem",
                                       "isRequired": true,
@@ -5057,7 +5064,7 @@
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "maxDynamicHeight": 9000,
                                       "iconAlign": "left",
-                                      "defaultText": "",
+                                      "defaultText": "{{findById_branch.data[0].processingFees}}",
                                       "minDynamicHeight": 4
                                     },
                                     {
@@ -5133,7 +5140,11 @@
                                       "defaultOptionValue": "",
                                       "animateLoading": true,
                                       "parentColumnSpace": 14.385284423828125,
-                                      "dynamicTriggerPathList": [],
+                                      "dynamicTriggerPathList": [
+                                        {
+                                          "key": "onOptionChange"
+                                        }
+                                      ],
                                       "leftColumn": 4,
                                       "dynamicBindingPathList": [
                                         {
@@ -5168,6 +5179,7 @@
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "maxDynamicHeight": 9000,
                                       "originalBottomRow": 11,
+                                      "onOptionChange": "{{findById_branch.run()}}",
                                       "minDynamicHeight": 4
                                     },
                                     {
@@ -5429,13 +5441,16 @@
                                         },
                                         {
                                           "key": "borderRadius"
+                                        },
+                                        {
+                                          "key": "defaultText"
                                         }
                                       ],
                                       "labelPosition": "Left",
                                       "labelStyle": "",
-                                      "inputType": "TEXT",
+                                      "inputType": "NUMBER",
                                       "placeholderText": "Finance Rate",
-                                      "isDisabled": false,
+                                      "isDisabled": true,
                                       "key": "hr9o4hb3fh",
                                       "labelTextSize": "0.875rem",
                                       "isRequired": true,
@@ -5455,7 +5470,7 @@
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "maxDynamicHeight": 9000,
                                       "iconAlign": "left",
-                                      "defaultText": "",
+                                      "defaultText": "{{findById_branch.data[0].interest}}",
                                       "minDynamicHeight": 4
                                     },
                                     {
@@ -6169,6 +6184,18 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "New loan page_findById_branch",
+              "name": "findById_branch",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "branchSelect.selectedOptionValue"
+              ],
               "timeoutInMillisecond": 10000
             }
           ]
