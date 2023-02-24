@@ -2158,10 +2158,10 @@
                       "labelAlignment": "left",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 59,
+                      "originalTopRow": 58,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 64,
+                      "originalBottomRow": 63,
                       "iconAlign": "left",
                       "defaultText": "{{FindById_ManageBranch_1.data[0].gracePeriod}}",
                       "minDynamicHeight": 4
@@ -2220,10 +2220,10 @@
                       "labelAlignment": "left",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 66,
+                      "originalTopRow": 64,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 73,
+                      "originalBottomRow": 71,
                       "iconAlign": "left",
                       "defaultText": "{{FindById_ManageBranch_1.data[0].preClosingCharge}}",
                       "minDynamicHeight": 4
@@ -8233,9 +8233,6 @@
                         },
                         {
                           "key": "borderRadius"
-                        },
-                        {
-                          "key": "defaultText"
                         }
                       ],
                       "labelPosition": "Top",
@@ -8262,7 +8259,7 @@
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
-                      "defaultText": "{{Get_Loans.data[1].newloans.loanNumber}}",
+                      "defaultText": "",
                       "minDynamicHeight": 4
                     },
                     {
@@ -8344,9 +8341,6 @@
                           "key": "primaryColumns._id.computedValue"
                         },
                         {
-                          "key": "primaryColumns.newloans.computedValue"
-                        },
-                        {
                           "key": "primaryColumns.borrower.computedValue"
                         },
                         {
@@ -8387,6 +8381,9 @@
                         },
                         {
                           "key": "primaryColumns.customColumn4.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.newloans.computedValue"
                         }
                       ],
                       "leftColumn": 1,
@@ -8513,7 +8510,7 @@
                           "label": "LoanNumber",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( Get_Loans.data[1].newloans.loanNumber))}}",
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( Get_Loans.data))}}",
                           "validation": {},
                           "cellBackground": ""
                         },
@@ -8541,7 +8538,7 @@
                           "label": "borrowerName",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( Get_Loans.data[1].borrower.name))}}",
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( Get_Loans.data[0].borrower.name))}}",
                           "validation": {},
                           "cellBackground": ""
                         },
@@ -8791,7 +8788,7 @@
                           "label": "PhoneNumber",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( Get_Loans.data[1].borrower.phoneNumber))}}",
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( Get_Loans.data[0].borrower.phoneNumber))}}",
                           "validation": {},
                           "buttonStyle": "rgb(3, 179, 101)",
                           "labelColor": "#FFFFFF"
@@ -8818,7 +8815,7 @@
                           "label": "LoanAmount",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( Get_Loans.data[1].LoanDetails.FinanceAmount))}}",
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( Get_Loans.data[0].LoanDetails.FinanceAmount))}}",
                           "validation": {},
                           "buttonStyle": "rgb(3, 179, 101)",
                           "labelColor": "#FFFFFF",
@@ -8874,7 +8871,7 @@
                           "label": "EMIAmount",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( Get_Loans.data[1].LoanDetails.EMIAmount))}}",
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( Get_Loans.data[0].LoanDetails.EMIAmount))}}",
                           "validation": {},
                           "buttonStyle": "rgb(3, 179, 101)",
                           "labelColor": "#FFFFFF"
@@ -9644,6 +9641,9 @@
                         },
                         {
                           "key": "primaryColumns.customColumn5.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.customColumn1.computedValue"
                         }
                       ],
                       "leftColumn": 4,
@@ -10048,7 +10048,7 @@
                           "label": "CustomerCode",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "",
+                          "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( Js_customer_1.getcustomercount()))}}",
                           "validation": {},
                           "buttonStyle": "rgb(3, 179, 101)",
                           "labelColor": "#FFFFFF"
@@ -10075,7 +10075,7 @@
                           "label": "LoanNumber",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( Get_Loans.data[1].newloans.loanNumber))}}",
+                          "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( Get_Loans.data[0].newloans.loanNumber))}}",
                           "validation": {},
                           "buttonStyle": "rgb(3, 179, 101)",
                           "labelColor": "#FFFFFF"
@@ -10102,7 +10102,7 @@
                           "label": "Name",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( Get_Loans.data[1].borrower.name))}}",
+                          "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( Get_Loans.data[0].borrower.name))}}",
                           "validation": {},
                           "buttonStyle": "rgb(3, 179, 101)",
                           "labelColor": "#FFFFFF"
@@ -10129,7 +10129,7 @@
                           "label": "phoneNumber",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( Get_Loans.data[1].borrower.phoneNumber))}}",
+                          "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( Get_Loans.data[0].borrower.phoneNumber))}}",
                           "validation": {},
                           "buttonStyle": "rgb(3, 179, 101)",
                           "labelColor": "#FFFFFF"
@@ -10156,7 +10156,7 @@
                           "label": "Address",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( Get_Loans.data[1].borrower.address))}}",
+                          "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( Get_Loans.data[0].borrower.address))}}",
                           "validation": {},
                           "buttonStyle": "rgb(3, 179, 101)",
                           "labelColor": "#FFFFFF"
@@ -10353,8 +10353,7 @@
                         "isActive",
                         "_id",
                         "customColumn1",
-                        "customColumn2",
-                        "empolyeeName"
+                        "customColumn2"
                       ],
                       "dynamicPropertyPathList": [
                         {
@@ -10725,34 +10724,6 @@
                           "boxShadow": "{{EmployeeTable.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}",
                           "customAlias": "",
                           "onClick": "{{(()=>{\n\tFindById_Employee_1.run()\n\tshowModal('Modal8')\n})()}}"
-                        },
-                        "empolyeeName": {
-                          "allowCellWrapping": false,
-                          "index": 10,
-                          "width": 150,
-                          "originalId": "empolyeeName",
-                          "id": "empolyeeName",
-                          "alias": "empolyeeName",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textColor": "",
-                          "textSize": "0.875rem",
-                          "fontStyle": "",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": false,
-                          "isDisabled": false,
-                          "isCellEditable": false,
-                          "isEditable": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "empolyeeName",
-                          "isSaveVisible": true,
-                          "isDiscardVisible": true,
-                          "computedValue": "",
-                          "validation": {},
-                          "cellBackground": ""
                         }
                       },
                       "key": "byji720a4n",
@@ -14247,7 +14218,7 @@
               "backgroundColor": "#FFFFFF",
               "isDeprecated": false,
               "rightColumn": 59,
-              "dynamicHeight": "FIXED",
+              "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "bfmudpr57u",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "defaultTab": "{{appsmith.store.flag ? 'loans':'Dashboard'}}",
@@ -14309,8 +14280,10 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
+              "originalTopRow": 4,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
+              "originalBottomRow": 82,
               "minDynamicHeight": 10
             },
             {
@@ -18669,6 +18642,14 @@
               "jsonPathKeys": [
                 "appsmith.store.access_token"
               ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Dashboard page_loans_count_1",
+              "name": "loans_count_1",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             }
           ],
