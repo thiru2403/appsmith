@@ -5893,7 +5893,7 @@
                               "resetFormOnClick": false,
                               "boxShadow": "none",
                               "widgetName": "Button2",
-                              "onClick": "{{Insert_Loans.run(\n()=>{\n\tGet_Loans_1.data();\n showAlert('SucessfullAppliced')\nnavigateTo('Dashboard page')\n}\n\n)}}",
+                              "onClick": "{{Insert_Loans.run(\n()=>{\n\tGet_Loans_1.run();\n showAlert('SucessfullAppliced')\nnavigateTo('Dashboard page')\n}\n\n)}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "dynamicPropertyPathList": [
                                 {

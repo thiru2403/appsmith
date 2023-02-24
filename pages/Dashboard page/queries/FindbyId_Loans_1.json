@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "delete_employee_1",
+    "name": "FindbyId_Loans_1",
     "datasource": {
       "name": "RoyalFinance",
       "pluginId": "mongo-plugin",
@@ -29,13 +29,13 @@
           }
         },
         "body": {
-          "data": "{\n  \"delete\": \"employees\",\n  \"deletes\": [\n    {\n      \"q\": {\n        \"_id\": \"id_of_document_to_delete\"\n      },\n      \"limit\": 1\n    }\n  ]\n}\n"
+          "data": "{\n  \"find\": \"Loans\",\n  \"filter\": {\n    \"_id\": ObjectId(\"id_to_query_with\")\n  }\n}\n"
         },
         "collection": {
-          "data": "employees"
+          "data": "Loans"
         },
         "command": {
-          "data": "DELETE"
+          "data": "FIND"
         },
         "count": {
           "query": {
@@ -47,7 +47,7 @@
             "data": "SINGLE"
           },
           "query": {
-            "data": "{ \"_id\": ObjectId(\"{{Table1.selectedRow._id}}\") }"
+            "data": ""
           }
         },
         "distinct": {
@@ -59,10 +59,10 @@
           }
         },
         "find": {
-          "skip": {
-            "data": ""
-          },
           "query": {
+            "data": "{\"_id\": ObjectId({{Table1.selectedRow._id}})}"
+          },
+          "skip": {
             "data": ""
           },
           "sort": {
@@ -99,7 +99,7 @@
     "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
-        "key": "formData.delete.query.data"
+        "key": "formData.find.query.data"
       }
     ],
     "isValid": true,
@@ -113,7 +113,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Dashboard page_delete_employee_1",
+  "id": "Dashboard page_FindbyId_Loans_1",
   "deleted": false,
-  "gitSyncId": "63e0d31cef0ac73ef4acc806_63ef2d0e3d6355314506339a"
+  "gitSyncId": "63e0d31cef0ac73ef4acc806_63f85e76b5d69d3a732654e9"
 }
