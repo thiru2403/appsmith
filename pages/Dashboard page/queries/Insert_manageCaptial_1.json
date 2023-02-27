@@ -77,7 +77,7 @@
         },
         "insert": {
           "documents": {
-            "data": "[{   \n      \"amount\": \"{{investmentAmount.text}}\",\n      \"comments\": \"{{investnmentComments.text}}\",\n      \"investement\": \"{{investnementDate.selectedDate}}\",\n      \"partnerName\": \"{{select_Partner.selectedOptionLabel}}\",\n      \"source\": \"{{investnementSource.text}}\",\n}]"
+            "data": "[{   \n      \"amount\": \"{{investmentAmount.text}}\",\n      \"comments\": \"{{investnmentComments.text}}\",\n      \"investement\": \"{{investnementDate.selectedDate}}\",\n\t      \"partnerId\": \"{{select_Partner.selectedOptionValue}}\"\n      \"source\": \"{{investnementSource.text}}\",\n}]"
           }
         },
         "smartSubstitution": {
@@ -110,7 +110,7 @@
       "investnementDate.selectedDate",
       "investnementSource.text",
       "investnmentComments.text",
-      "select_Partner.selectedOptionLabel"
+      "select_Partner.selectedOptionValue"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

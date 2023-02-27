@@ -91,7 +91,7 @@
             "data": "{\"_id\": ObjectId({{Table2.selectedRow._id}})}"
           },
           "update": {
-            "data": "{ \"$set\": { \n\t\t\t\t\"branchName\":\"{{Select2.selectedOptionLabel}}\",\n\t\t\t\t\"areas\":\"{{Input22.text}}\" ,} }"
+            "data": "{ \"$set\": { \n\t\t\t\t\"branchName\":\"{{Select2Copy.selectedOptionLabel}}\",\n  \"branchId\":\"{{Select2Copy.selectedOptionValue}}\"\n\t\t\t\t\"areas\":\"{{MultiTreeSelect1CopyCopy.selectedOptionLabels}}\" ,} }\n\t\"areasId\":\"{{MultiTreeSelect1CopyCopy.selectedOptionValues}}\" ,} }"
           }
         }
       }
@@ -109,8 +109,10 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Input22.text",
-      "Select2.selectedOptionLabel",
+      "MultiTreeSelect1CopyCopy.selectedOptionLabels",
+      "MultiTreeSelect1CopyCopy.selectedOptionValues",
+      "Select2Copy.selectedOptionLabel",
+      "Select2Copy.selectedOptionValue",
       "Table2.selectedRow._id"
     ],
     "userSetOnLoad": false,

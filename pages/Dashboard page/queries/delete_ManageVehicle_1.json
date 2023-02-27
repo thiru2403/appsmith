@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "Get_Loans",
+    "name": "delete_ManageVehicle_1",
     "datasource": {
       "name": "RoyalFinance",
       "pluginId": "mongo-plugin",
@@ -29,13 +29,13 @@
           }
         },
         "body": {
-          "data": "{\n  \"find\": \"Loans\",\n  \"sort\": {\n    \"_id\": 1\n  },\n  \"limit\": 10\n}\n"
+          "data": "{\n  \"delete\": \"ManageVehicle\",\n  \"deletes\": [\n    {\n      \"q\": {\n        \"_id\": \"id_of_document_to_delete\"\n      },\n      \"limit\": 1\n    }\n  ]\n}\n"
         },
         "collection": {
-          "data": "Loans"
+          "data": "ManageVehicle"
         },
         "command": {
-          "data": "FIND"
+          "data": "DELETE"
         },
         "count": {
           "query": {
@@ -47,7 +47,7 @@
             "data": "SINGLE"
           },
           "query": {
-            "data": ""
+            "data": "{ \"_id\": ObjectId(\"{{Table4.selectedRow._id}}\") }"
           }
         },
         "distinct": {
@@ -59,16 +59,16 @@
           }
         },
         "find": {
+          "skip": {
+            "data": ""
+          },
           "query": {
             "data": ""
           },
-          "limit": {
-            "data": "10"
-          },
           "sort": {
-            "data": "{\"_id\": 1}"
+            "data": ""
           },
-          "skip": {
+          "limit": {
             "data": ""
           },
           "projection": {
@@ -96,18 +96,24 @@
         }
       }
     },
-    "executeOnLoad": true,
-    "dynamicBindingPathList": [],
+    "executeOnLoad": false,
+    "dynamicBindingPathList": [
+      {
+        "key": "formData.delete.query.data"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
-    "userSetOnLoad": true,
+    "jsonPathKeys": [
+      "Table4.selectedRow._id"
+    ],
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Dashboard page_Get_Loans",
+  "id": "Dashboard page_delete_ManageVehicle_1",
   "deleted": false,
-  "gitSyncId": "63e0d31cef0ac73ef4acc806_63ee00c175933522b31f800a"
+  "gitSyncId": "63e0d31cef0ac73ef4acc806_63f88c9952683f5077110c7d"
 }

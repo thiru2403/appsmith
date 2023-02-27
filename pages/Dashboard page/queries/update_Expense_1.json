@@ -91,7 +91,7 @@
             "data": "{ \"_id\": ObjectId(\"{{expense.selectedRow._id}}\") }"
           },
           "update": {
-            "data": "{\"$set\":{\"branchName\": \"{{selectExpenseBranch.selectedOptionLabel}}\",\n\t\"expensesName\": \"{{expenseName.text}}\",\n      \"amount\": \"{{ExpenseAmount.text}}\",\n       \"expensesBy\": \"{{expensesBy.selectedOptionLabel}}\",\n\t\"expensesCategory\":\"{{expenseCategory.selectedOptionLabel}}\"\n       }}"
+            "data": "{\"$set\":{\"branchName\": \"{{expenseBranchNameCopy.text}}\",\n\t\"expensesName\": \"{{expenseNameCopy.text}}\",\n      \"amount\": \"{{ExpenseAmountCopy.text}}\",\n       \"expensesBy\": \"{{\nSelect4.selectedOptionLabel}}\",\n\"expensesById\": \"{{Select4.selectedOptionValue}}\",\n\t\"expensesCategory\":\"{{\nSelect3.selectedOptionValue}}\"\n       }}"
           }
         }
       }
@@ -109,12 +109,13 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "ExpenseAmount.text",
+      "\nSelect3.selectedOptionValue",
+      "\nSelect4.selectedOptionLabel",
+      "ExpenseAmountCopy.text",
+      "Select4.selectedOptionValue",
       "expense.selectedRow._id",
-      "expenseCategory.selectedOptionLabel",
-      "expenseName.text",
-      "expensesBy.selectedOptionLabel",
-      "selectExpenseBranch.selectedOptionLabel"
+      "expenseBranchNameCopy.text",
+      "expenseNameCopy.text"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

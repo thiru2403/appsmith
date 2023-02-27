@@ -59,7 +59,7 @@
         }
       }
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "isValid": true,
     "invalids": [],
     "messages": [],

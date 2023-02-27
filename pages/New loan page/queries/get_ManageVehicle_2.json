@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "FindbyId_Loans_1",
+    "name": "get_ManageVehicle_2",
     "datasource": {
       "name": "RoyalFinance",
       "pluginId": "mongo-plugin",
@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Dashboard page",
+    "pageId": "New loan page",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -29,10 +29,10 @@
           }
         },
         "body": {
-          "data": "{\n  \"find\": \"Loans\",\n  \"filter\": {\n    \"_id\": ObjectId(\"id_to_query_with\")\n  }\n}\n"
+          "data": "{\n  \"find\": \"ManageVehicle\",\n  \"filter\": {\n    \"Color\": \"Blue\"\n  },\n  \"sort\": {\n    \"_id\": 1\n  },\n  \"limit\": 10\n}\n"
         },
         "collection": {
-          "data": "Loans"
+          "data": "ManageVehicle"
         },
         "command": {
           "data": "FIND"
@@ -60,15 +60,15 @@
         },
         "find": {
           "query": {
-            "data": "{\"_id\": ObjectId({{Table1.selectedRow._id}})}"
-          },
-          "skip": {
-            "data": ""
-          },
-          "sort": {
             "data": ""
           },
           "limit": {
+            "data": "10"
+          },
+          "sort": {
+            "data": "{\"_id\": 1}"
+          },
+          "skip": {
             "data": ""
           },
           "projection": {
@@ -96,24 +96,18 @@
         }
       }
     },
-    "executeOnLoad": false,
-    "dynamicBindingPathList": [
-      {
-        "key": "formData.find.query.data"
-      }
-    ],
+    "executeOnLoad": true,
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "Table1.selectedRow._id"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Dashboard page_FindbyId_Loans_1",
+  "id": "New loan page_get_ManageVehicle_2",
   "deleted": false,
-  "gitSyncId": "63e0d31cef0ac73ef4acc806_63f85e76b5d69d3a732654e9"
+  "gitSyncId": "63e0d31cef0ac73ef4acc806_63f89684cbd9da52c0b4c87c"
 }

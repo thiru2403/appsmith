@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "Get_Loans",
+    "name": "update_ManageVehicle_1",
     "datasource": {
       "name": "RoyalFinance",
       "pluginId": "mongo-plugin",
@@ -29,13 +29,13 @@
           }
         },
         "body": {
-          "data": "{\n  \"find\": \"Loans\",\n  \"sort\": {\n    \"_id\": 1\n  },\n  \"limit\": 10\n}\n"
+          "data": "{\n  \"update\": \"ManageVehicle\",\n  \"updates\": [\n    {\n      \"q\": {\n        \"_id\": ObjectId(\"id_of_document_to_update\")\n      },\n      \"u\": { \"$set\": { \"Make\": \"new value\" } }\n    }\n  ]\n}\n"
         },
         "collection": {
-          "data": "Loans"
+          "data": "ManageVehicle"
         },
         "command": {
-          "data": "FIND"
+          "data": "UPDATE"
         },
         "count": {
           "query": {
@@ -59,16 +59,16 @@
           }
         },
         "find": {
+          "skip": {
+            "data": ""
+          },
           "query": {
             "data": ""
           },
-          "limit": {
-            "data": "10"
-          },
           "sort": {
-            "data": "{\"_id\": 1}"
+            "data": ""
           },
-          "skip": {
+          "limit": {
             "data": ""
           },
           "projection": {
@@ -85,29 +85,41 @@
         },
         "updateMany": {
           "limit": {
-            "data": "SINGLE"
+            "data": "ALL"
           },
           "query": {
-            "data": ""
+            "data": "{ \"_id\": ObjectId(\"{{Table4.selectedRow._id}}\") }"
           },
           "update": {
-            "data": ""
+            "data": "{ \"$set\": {  \"MakeName\": \"{{\nInput25Copy.text}}\",\n\t\t \"Model\":\"{{Input23Copy.text}}\",\n\t  \"Color\":\"{{Input24Copy.text}}\" } }"
           }
         }
       }
     },
-    "executeOnLoad": true,
-    "dynamicBindingPathList": [],
+    "executeOnLoad": false,
+    "dynamicBindingPathList": [
+      {
+        "key": "formData.updateMany.query.data"
+      },
+      {
+        "key": "formData.updateMany.update.data"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
-    "userSetOnLoad": true,
+    "jsonPathKeys": [
+      "\nInput25Copy.text",
+      "Input23Copy.text",
+      "Input24Copy.text",
+      "Table4.selectedRow._id"
+    ],
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Dashboard page_Get_Loans",
+  "id": "Dashboard page_update_ManageVehicle_1",
   "deleted": false,
-  "gitSyncId": "63e0d31cef0ac73ef4acc806_63ee00c175933522b31f800a"
+  "gitSyncId": "63e0d31cef0ac73ef4acc806_63f87ca5315b581a049657ef"
 }

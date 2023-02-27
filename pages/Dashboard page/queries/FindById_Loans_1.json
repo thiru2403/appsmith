@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "Get_Loans",
+    "name": "FindById_Loans_1",
     "datasource": {
       "name": "RoyalFinance",
       "pluginId": "mongo-plugin",
@@ -29,7 +29,7 @@
           }
         },
         "body": {
-          "data": "{\n  \"find\": \"Loans\",\n  \"sort\": {\n    \"_id\": 1\n  },\n  \"limit\": 10\n}\n"
+          "data": "{\n  \"find\": \"ManageVehicle\",\n  \"filter\": {\n    \"_id\": ObjectId(\"id_to_query_with\")\n  }\n}\n"
         },
         "collection": {
           "data": "Loans"
@@ -60,15 +60,15 @@
         },
         "find": {
           "query": {
+            "data": "{\"_id\": ObjectId(\"{{Table1.selectedRow._id}}\")}"
+          },
+          "skip": {
+            "data": ""
+          },
+          "sort": {
             "data": ""
           },
           "limit": {
-            "data": "10"
-          },
-          "sort": {
-            "data": "{\"_id\": 1}"
-          },
-          "skip": {
             "data": ""
           },
           "projection": {
@@ -97,17 +97,23 @@
       }
     },
     "executeOnLoad": true,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "formData.find.query.data"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
-    "userSetOnLoad": true,
+    "jsonPathKeys": [
+      "Table1.selectedRow._id"
+    ],
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Dashboard page_Get_Loans",
+  "id": "Dashboard page_FindById_Loans_1",
   "deleted": false,
-  "gitSyncId": "63e0d31cef0ac73ef4acc806_63ee00c175933522b31f800a"
+  "gitSyncId": "63e0d31cef0ac73ef4acc806_63f89b3913cf946f38a46433"
 }

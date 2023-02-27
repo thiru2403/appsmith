@@ -77,7 +77,7 @@
         },
         "insert": {
           "documents": {
-            "data": "[{\n\t\"newloans\":{\n\t\t\"loanNumber\":\"{{Input1.text}}\",\n\t\t\"flag\":\"{{Input2.text}}\"\n\t},\n\t\"borrower\":{\n\t\t\"aadharNumber\":\"{{input1_1.text}}\",\n\t\t\"phoneNumber\":\"{{borrowerPhoneNumber.text}}\",\n\t\t\"name\":\"{{boerrowerName.text}}\",\n\t\t\"address\":\"{{BoerrowerAddress.text}}\",\n\t\t\"landMark\":\"{{BoerrowerLandmark.text}}\",\n\t\t\"alternativeNumbner\":\"{{boerrowerAlterNumber.text}}\",\n\t},\n\t\"coBorrower\":{\n\t\t\t\"aadhaarNumber\":\"{{coBorrowerAadhaar.text}}\",\n\t\t\"phoneNumber\":\"{{coBoerrowerPhoneNumber.text}}\",\n\t\t\"name\":\"{{coBoerrowerName.text}}\",\n\t\t\"address\":\"{{coBoerrowerAddress.text}}\",\n\t\t\"landMark\":\"{{coBoerrowerLandmark.text}}\",\n\t\t\"alternativeNumbner\":\"{{coBoerrowerAlterNumber.text}}\",\n\t},\n\t\"reference\":{\n\t\t\"refferName\":\"{{refererName.text}}\",\n\t\t\"commisionType\":\"{{commisionSelect.selectedOptionValue}}\",\n\t\t\"commisionAmount\":\"{{refererAmount.text}}\"\n\t},\n\t\t\"vehicleDetails\":{\n\t\t\"make\":\"{{makeSelect.selectedOptionValue}}\",\n\t\t\"model\":\"{{modelSelect.selectedOptionValue}}\",\n\t\t\"colour\":\"{{colourSelect.selectedOptionValue}}\",\n\t\t\"vehicleNumber\":\"{{vehcielNumber.text}}\",\n\t\t\"monthYear\":\"{{monthyear.selectedDate}}\",\n\t\t\"chassisNumber\":\"{{chassisNumber.text}}\",\n\t\t\"engineNumber\":\"{{engineNumber.text}}\",\n\t\t\"keyNumber\":\"{{keyNumber.text}}\",\n\t\t\"dateOfReg\":\"{{dateOfReg.selectedDate}}\"\t\n\t},\n\t\t\"insuranceDetails\":{\n\t\t\"insurance\":{\n\t\t\t\"insuranceNumber\":\"{{insuranceNumber.text}}\",\n\t\t\t\"companyName\":\"{{insuranceNumberCopy.text}}\",\n\t\t\t\"expiryDate\":\"{{insuranceExpiryDate.selectedDate}}\"\n\t\t},\n\t\t\"endrosenment\":{\n\t\t\t\"endrosenmentNumber\":\"{{endrosenmentNumber.text}}\",\n\t\t\t\"endrosenmentDate\":\"{{endrosnmentDate.selectedDate}}\"\n\t\t}\n\t},\n\t\"vehcileImage\":{\n\t},\n\t\t\"LoanDetails\":{\n\t\t\"Branch\":\"{{branchSelect.selectedOptionLabel}}\",\n\t\t\"Date\":\"{{loanDeatDate.formattedDate}}\",\n\t\t\"FinanceAmount\":\"{{financeAmount.text}}\",\n\t\t\"ProcessingFees\":\"{{Input5Copy.text}}\",\n\t\t\"FinanceRate\":\"{{financeRate.text}}\",\n\t\t\"LoanPeriod\":\"{{Input3.text}}\",\n\t\t\"EMIAmount\":\"{{emiAmount.text}}\",\n\t\t\"FirstEMIDue\":\"{{firstEmiDate.formattedDate}}\",\n\t\t\"secondEMIdue\":\"{{secondEmiDate.formattedDate}}\",\n\t\"ThirdEMIdue\":\"{{thirdEmiDate.formattedDate}}\"\n\t},\n\"Remark\":{\n\t\"remark\":\"{{remarks.text}}\"\n},\n\t\"PaymentType\":{\n\t\"area\":\"{{Select1.selectedOptionLabel}}\",\n\t\"collectorName\":\"{{Select2.selectedOptionLabel}}\"\n\t}\n}]"
+            "data": "[{\n\t\"newloans\":{\n\t\t\"loanNumber\":\"{{Input1.text}}\",\n\t\t\"flag\":\"{{Input2.text}}\"\n\t},\n\t\"borrower\":{\n\t\t\"aadharNumber\":\"{{input1_1.text}}\",\n\t\t\"phoneNumber\":\"{{borrowerPhoneNumber.text}}\",\n\t\t\"name\":\"{{boerrowerName.text}}\",\n\t\t\"address\":\"{{BoerrowerAddress.text}}\",\n\t\t\"landMark\":\"{{BoerrowerLandmark.text}}\",\n\t\t\"alternativeNumbner\":\"{{boerrowerAlterNumber.text}}\",\n\t},\n\t\"coBorrower\":{\n\t\t\t\"aadhaarNumber\":\"{{coBorrowerAadhaar.text}}\",\n\t\t\"phoneNumber\":\"{{coBoerrowerPhoneNumber.text}}\",\n\t\t\"name\":\"{{coBoerrowerName.text}}\",\n\t\t\"address\":\"{{coBoerrowerAddress.text}}\",\n\t\t\"landMark\":\"{{coBoerrowerLandmark.text}}\",\n\t\t\"alternativeNumbner\":\"{{coBoerrowerAlterNumber.text}}\",\n\t},\n\t\"reference\":{\n\t\t\"refferName\":\"{{refererName.text}}\",\n\t\t\"commisionType\":\"{{commisionSelect.selectedOptionValue}}\",\n\t\t\"commisionAmount\":\"{{refererAmount.text}}\"\n\t},\n\t\t\"vehicleDetails\":{}\n\t\t\t\"makeId\":\"{{makeSelect.selectedOptionValue}}\",\n\t\t\"model\":\"{{modelSelect.selectedOptionLabel}}\",\n\t\t\t\t\"modelId\":\"{{modelSelect.selectedOptionValue}}\",\n\t\t\"colour\":\"{{colourSelect.selectedOptionLabel}}\",\n\t\t\t\"colourId\":\"{{colourSelect.selectedOptionValue}}\",\n\t\t\"vehicleNumber\":\"{{vehcielNumber.text}}\",\n\t\t\"monthYear\":\"{{monthyear.selectedDate}}\",\n\t\t\"chassisNumber\":\"{{chassisNumber.text}}\",\n\t\t\"engineNumber\":\"{{engineNumber.text}}\",\n\t\t\"keyNumber\":\"{{keyNumber.text}}\",\n\t\t\"dateOfReg\":\"{{dateOfReg.selectedDate}}\"\t\n\t},\n\t\t\"insuranceDetails\":{\n\t\t\"insurance\":{\n\t\t\t\"insuranceNumber\":\"{{insuranceNumber.text}}\",\n\t\t\t\"companyName\":\"{{insuranceNumberCopy.text}}\",\n\t\t\t\"expiryDate\":\"{{insuranceExpiryDate.selectedDate}}\"\n\t\t},\n\t\t\"endrosenment\":{\n\t\t\t\"endrosenmentNumber\":\"{{endrosenmentNumber.text}}\",\n\t\t\t\"endrosenmentDate\":\"{{endrosnmentDate.selectedDate}}\"\n\t\t}\n\t},\n\t\"vehcileImage\":{\n\t},\n\t\t\"LoanDetails\":{\n\t\t\"Branch\":\"{{branchSelect.selectedOptionLabel}}\",\n\t\t\t\"BranchId\":\"{{branchSelect.selectedOptionValue}}\",\n\t\t\"Date\":\"{{loanDeatDate.formattedDate}}\",\n\t\t\"FinanceAmount\":\"{{financeAmount.text}}\",\n\t\t\"ProcessingFees\":\"{{Input5Copy.text}}\",\n\t\t\"FinanceRate\":\"{{financeRate.text}}\",\n\t\t\"LoanPeriod\":\"{{Input3.text}}\",\n\t\t\"EMIAmount\":\"{{emiAmount.text}}\",\n\t\t\"FirstEMIDue\":\"{{firstEmiDate.formattedDate}}\",\n\t\t\"secondEMIdue\":\"{{secondEmiDate.formattedDate}}\",\n\t\"ThirdEMIdue\":\"{{thirdEmiDate.formattedDate}}\"\n\t},\n\"Remark\":{\n\t\"remark\":\"{{remarks.text}}\"\n},\n\t\"PaymentType\":{\n\t\"area\":\"{{Select1.selectedOptionLabel}}\",\n\t\t\t\"areaId\":\"{{Select1.selectedOptionValue}}\",\n\t\"collectorName\":\"{{Select2.selectedOptionLabel}}\",\n\t\t\t\"collectorId\":\"{{Select2.selectedOptionValue}}\"\n\t}\n}]"
           }
         },
         "smartSubstitution": {
@@ -113,11 +113,14 @@
       "Input3.text",
       "Input5Copy.text",
       "Select1.selectedOptionLabel",
+      "Select1.selectedOptionValue",
       "Select2.selectedOptionLabel",
+      "Select2.selectedOptionValue",
       "boerrowerAlterNumber.text",
       "boerrowerName.text",
       "borrowerPhoneNumber.text",
       "branchSelect.selectedOptionLabel",
+      "branchSelect.selectedOptionValue",
       "chassisNumber.text",
       "coBoerrowerAddress.text",
       "coBoerrowerAlterNumber.text",
@@ -125,6 +128,7 @@
       "coBoerrowerName.text",
       "coBoerrowerPhoneNumber.text",
       "coBorrowerAadhaar.text",
+      "colourSelect.selectedOptionLabel",
       "colourSelect.selectedOptionValue",
       "commisionSelect.selectedOptionValue",
       "dateOfReg.selectedDate",
@@ -142,6 +146,7 @@
       "keyNumber.text",
       "loanDeatDate.formattedDate",
       "makeSelect.selectedOptionValue",
+      "modelSelect.selectedOptionLabel",
       "modelSelect.selectedOptionValue",
       "monthyear.selectedDate",
       "refererAmount.text",

@@ -91,7 +91,7 @@
             "data": "{ \"_id\": ObjectId({{capitalTable.selectedRow._id}}) }"
           },
           "update": {
-            "data": "{ \"$set\":\n {\"amount\": \"{{updateInvestnmentAmount.text}}\",\n      \"comments\": \"{{updateInvestnmentComments.text}}\",\n      \"investement\": \"{{updateInvestnmentDate.selectedDate}}\",\n      \"partnerName\": \"{{partnerName.text}}\",\n      \"source\": \"{{updateInvestnmentSource.text}}\",} }"
+            "data": "{ \"$set\":\n {\"amount\": \"{{updateInvestnmentAmount.text}}\",\n      \"comments\": \"{{updateInvestnmentComments.text}}\",\n      \"investement\": \"{{updateInvestnmentDate.selectedDate}}\",\n      \"partnerName\": \"{{partnerName.text}}\",\n \n      \"source\": \"{{updateInvestnmentSource.text}}\",} }"
           }
         }
       }

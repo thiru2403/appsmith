@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "Get_Loans",
+    "name": "get_Aggregate_ManageCapital",
     "datasource": {
       "name": "RoyalFinance",
       "pluginId": "mongo-plugin",
@@ -25,17 +25,17 @@
             "data": "10"
           },
           "arrayPipelines": {
-            "data": ""
+            "data": "[\n  {\n    '$lookup': {\n      'from': 'ManagePartner',\n      'localField': 'partnerId',\n      'foreignField': 'ObjectId(_id)',\n\t\t\t 'pipeline': [ {'$project': {'name': 1} } ],\n      'as': 'PartnerDetails'\n    },\t\n  }\n]"
           }
         },
         "body": {
-          "data": "{\n  \"find\": \"Loans\",\n  \"sort\": {\n    \"_id\": 1\n  },\n  \"limit\": 10\n}\n"
+          "data": "{\n  \"aggregate\": \"Managecaptial\",\n  \"pipeline\": [ {\"$sort\" : {\"_id\": 1} } ],\n  \"limit\": 10,\n  \"explain\": \"true\"\n}\n"
         },
         "collection": {
-          "data": "Loans"
+          "data": "Managecaptial"
         },
         "command": {
-          "data": "FIND"
+          "data": "AGGREGATE"
         },
         "count": {
           "query": {
@@ -59,16 +59,16 @@
           }
         },
         "find": {
+          "skip": {
+            "data": ""
+          },
           "query": {
             "data": ""
           },
-          "limit": {
-            "data": "10"
-          },
           "sort": {
-            "data": "{\"_id\": 1}"
+            "data": ""
           },
-          "skip": {
+          "limit": {
             "data": ""
           },
           "projection": {
@@ -102,12 +102,12 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Dashboard page_Get_Loans",
+  "id": "Dashboard page_get_Aggregate_ManageCapital",
   "deleted": false,
-  "gitSyncId": "63e0d31cef0ac73ef4acc806_63ee00c175933522b31f800a"
+  "gitSyncId": "63e0d31cef0ac73ef4acc806_63fc8251990f7d4baf443fe6"
 }
