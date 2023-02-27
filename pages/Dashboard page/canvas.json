@@ -18427,7 +18427,7 @@
                                   "label": "Partner Name",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{capitalTable.processedTableData.map((currentRow, currentIndex) => ( get_Aggregate_ManageCapital.data[0].PartnerDetails[0].name))}}",
+                                  "computedValue": "{{capitalTable.processedTableData.map((currentRow, currentIndex) => ( get_Aggregate_ManageCapital.data[0]?.PartnerDetails[0]?.name))}}",
                                   "validation": {},
                                   "cellBackground": "",
                                   "sticky": ""
@@ -31365,6 +31365,14 @@
           ],
           [
             {
+              "id": "Dashboard page_get_Aggregate_ManageCapital",
+              "name": "get_Aggregate_ManageCapital",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
               "id": "Dashboard page_get_Employee_1",
               "name": "get_Employee_1",
               "confirmBeforeExecute": false,
@@ -31415,26 +31423,6 @@
           ],
           [
             {
-              "id": "Dashboard page_loans_count_1",
-              "name": "loans_count_1",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Dashboard page_get_Aggregate_ManageCapital",
-              "name": "get_Aggregate_ManageCapital",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
               "id": "Dashboard page_get_user",
               "name": "get_user",
               "confirmBeforeExecute": false,
@@ -31442,6 +31430,14 @@
               "jsonPathKeys": [
                 "appsmith.store.access_token"
               ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Dashboard page_loans_count_1",
+              "name": "loans_count_1",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             }
           ],
