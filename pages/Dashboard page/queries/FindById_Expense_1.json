@@ -60,7 +60,7 @@
         },
         "find": {
           "query": {
-            "data": "{\"_id\": ObjectId(\"{{expense.selectedRow._id}}\")}"
+            "data": "{ \"_id\": ObjectId(\"{{expense.selectedRow._id}}\") }"
           },
           "skip": {
             "data": ""

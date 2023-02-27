@@ -15,6 +15,7 @@
     },
     "pageId": "Dashboard page",
     "actionConfiguration": {
+      "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
@@ -22,6 +23,9 @@
         "aggregate": {
           "limit": {
             "data": "10"
+          },
+          "arrayPipelines": {
+            "data": ""
           }
         },
         "body": {
@@ -33,20 +37,47 @@
         "command": {
           "data": "FIND"
         },
+        "count": {
+          "query": {
+            "data": ""
+          }
+        },
         "delete": {
           "limit": {
             "data": "SINGLE"
+          },
+          "query": {
+            "data": ""
+          }
+        },
+        "distinct": {
+          "query": {
+            "data": ""
+          },
+          "key": {
+            "data": ""
           }
         },
         "find": {
           "query": {
-            "data": "{}"
+            "data": ""
           },
           "limit": {
             "data": "10"
           },
           "sort": {
             "data": "{\"_id\": 1}"
+          },
+          "skip": {
+            "data": ""
+          },
+          "projection": {
+            "data": ""
+          }
+        },
+        "insert": {
+          "documents": {
+            "data": ""
           }
         },
         "smartSubstitution": {
@@ -55,11 +86,18 @@
         "updateMany": {
           "limit": {
             "data": "SINGLE"
+          },
+          "query": {
+            "data": ""
+          },
+          "update": {
+            "data": ""
           }
         }
       }
     },
     "executeOnLoad": true,
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],

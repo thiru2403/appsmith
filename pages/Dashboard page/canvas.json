@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 880,
+          "bottomRow": 790,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -4641,10 +4641,10 @@
                                           "key": "borderRadius"
                                         },
                                         {
-                                          "key": "options"
+                                          "key": "placeholderText"
                                         },
                                         {
-                                          "key": "placeholderText"
+                                          "key": "options"
                                         }
                                       ],
                                       "labelPosition": "Left",
@@ -13812,8 +13812,8 @@
               "dynamicPropertyPathList": [],
               "displayName": "Tabs",
               "iconSVG": "/static/media/icon.74a6d653c8201e66f1cd367a3fba2657.svg",
-              "topRow": 10,
-              "bottomRow": 88,
+              "topRow": 1,
+              "bottomRow": 79,
               "parentRowSpace": 10,
               "type": "TABS_WIDGET",
               "hideCard": false,
@@ -13825,7 +13825,7 @@
                   "key": "onTabSelected"
                 }
               ],
-              "leftColumn": 11,
+              "leftColumn": 0,
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
@@ -18158,19 +18158,16 @@
                                   "key": "primaryColumns.comments.computedValue"
                                 },
                                 {
-                                  "key": "primaryColumns.partnerName.computedValue"
-                                },
-                                {
                                   "key": "primaryColumns.source.computedValue"
                                 },
                                 {
                                   "key": "primaryColumns.partnerId.computedValue"
                                 },
                                 {
-                                  "key": "tableData"
+                                  "key": "primaryColumns.PartnerDetails.computedValue"
                                 },
                                 {
-                                  "key": "primaryColumns.PartnerDetails.computedValue"
+                                  "key": "tableData"
                                 }
                               ],
                               "leftColumn": 1,
@@ -18217,7 +18214,6 @@
                               "defaultPageSize": 0,
                               "columnOrder": [
                                 "_id",
-                                "partnerName",
                                 "investement",
                                 "amount",
                                 "source",
@@ -18431,35 +18427,6 @@
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
                                   "computedValue": "{{capitalTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"comments\"]))}}",
-                                  "validation": {},
-                                  "cellBackground": "",
-                                  "sticky": ""
-                                },
-                                "partnerName": {
-                                  "allowCellWrapping": false,
-                                  "index": 3,
-                                  "width": 150,
-                                  "originalId": "partnerName",
-                                  "id": "partnerName",
-                                  "alias": "partnerName",
-                                  "horizontalAlignment": "CENTER",
-                                  "verticalAlignment": "CENTER",
-                                  "columnType": "text",
-                                  "textColor": "",
-                                  "textSize": "0.875rem",
-                                  "fontStyle": "",
-                                  "enableFilter": true,
-                                  "enableSort": true,
-                                  "isVisible": true,
-                                  "isDisabled": false,
-                                  "isCellEditable": false,
-                                  "isEditable": false,
-                                  "isCellVisible": true,
-                                  "isDerived": false,
-                                  "label": "Partner Name",
-                                  "isSaveVisible": true,
-                                  "isDiscardVisible": true,
-                                  "computedValue": "{{capitalTable.processedTableData.map((currentRow, currentIndex) => ( get_Aggregate_ManageCapital.data[0]?.PartnerDetails[0]?.name))}}",
                                   "validation": {},
                                   "cellBackground": "",
                                   "sticky": ""
@@ -19913,6 +19880,9 @@
                                 },
                                 {
                                   "key": "primaryColumns.customColumn2.boxShadow"
+                                },
+                                {
+                                  "key": "primaryColumns.MakeName.computedValue"
                                 }
                               ],
                               "leftColumn": 1,
@@ -19961,7 +19931,8 @@
                                 "Model",
                                 "Color",
                                 "customColumn2",
-                                "customColumn1"
+                                "customColumn1",
+                                "MakeName"
                               ],
                               "dynamicPropertyPathList": [
                                 {
@@ -20171,6 +20142,34 @@
                                   "customAlias": "",
                                   "iconName": "add",
                                   "onClick": "{{(()=>{\n\tFindById_ManageVehicle_1.run()\n\tshowModal('Modal14Copy')\n})()}}"
+                                },
+                                "MakeName": {
+                                  "allowCellWrapping": false,
+                                  "index": 2,
+                                  "width": 150,
+                                  "originalId": "MakeName",
+                                  "id": "MakeName",
+                                  "alias": "MakeName",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "text",
+                                  "textColor": "",
+                                  "textSize": "0.875rem",
+                                  "fontStyle": "",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": false,
+                                  "isDisabled": false,
+                                  "isCellEditable": false,
+                                  "isEditable": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "MakeName",
+                                  "isSaveVisible": true,
+                                  "isDiscardVisible": true,
+                                  "computedValue": "{{Table4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"MakeName\"]))}}",
+                                  "validation": {},
+                                  "cellBackground": ""
                                 }
                               },
                               "key": "x3he5e8w3q",
@@ -21391,7 +21390,7 @@
               "key": "7zlltcguvg",
               "backgroundColor": "#FFFFFF",
               "isDeprecated": false,
-              "rightColumn": 62,
+              "rightColumn": 39,
               "dynamicHeight": "FIXED",
               "widgetId": "bfmudpr57u",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -30616,14 +30615,11 @@
                                           "key": "borderRadius"
                                         },
                                         {
-                                          "key": "options"
-                                        },
-                                        {
                                           "key": "placeholderText"
                                         }
                                       ],
                                       "labelPosition": "Left",
-                                      "options": "{{get_ManageArea_1.data.map(\nres=>({\n\tlabel:res.areas,\n\tvalue:res._id\n})\n)}}",
+                                      "options": "",
                                       "placeholderText": "{{FindById_Loans_1.data[0].PaymentType.area}}",
                                       "isDisabled": true,
                                       "key": "h45kzmowi4",
