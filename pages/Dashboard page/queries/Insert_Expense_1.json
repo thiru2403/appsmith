@@ -77,7 +77,7 @@
         },
         "insert": {
           "documents": {
-            "data": "[{\n\t\"branchName\": \"{{selectExpenseBranch.selectedOptionLabel}}\",\n\t\"branchId\": \"{{selectExpenseBranch.selectedOptionValue}}\",\n\t\"expensesName\": \"{{expenseName.text}}\",\n      \"amount\": \"{{ExpenseAmount.text}}\",\n       \"expensesBy\": \"{{expensesBy.selectedOptionLabel}}\",\n\t\"expensesById\": \"{{expensesBy.selectedOptionValue}}\",\n\t\"expensesCategory\":\"{{expenseCategory.selectedOptionLabel}}\"\n}]"
+            "data": "[{\n\t\n\t\"branchId\": \"{{selectExpenseBranch.selectedOptionValue}}\",\n\t\"expensesName\": \"{{expenseName.text}}\",\n      \"amount\": \"{{ExpenseAmount.text}}\",\n\t\"expensesById\": \"{{expensesBy.selectedOptionValue}}\",\n\t\"expensesCategory\":\"{{expenseCategory.selectedOptionLabel}}\"\n}]"
           }
         },
         "smartSubstitution": {
@@ -109,9 +109,7 @@
       "ExpenseAmount.text",
       "expenseCategory.selectedOptionLabel",
       "expenseName.text",
-      "expensesBy.selectedOptionLabel",
       "expensesBy.selectedOptionValue",
-      "selectExpenseBranch.selectedOptionLabel",
       "selectExpenseBranch.selectedOptionValue"
     ],
     "userSetOnLoad": false,

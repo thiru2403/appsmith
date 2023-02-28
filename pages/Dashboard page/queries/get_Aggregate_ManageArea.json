@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "Query1",
+    "name": "get_Aggregate_ManageArea",
     "datasource": {
       "name": "RoyalFinance",
       "pluginId": "mongo-plugin",
@@ -25,14 +25,14 @@
             "data": "10"
           },
           "arrayPipelines": {
-            "data": "[\n  {\n    '$lookup': {\n      'from': 'ManageBranch',\n      'localField': 'branchId',\n      'foreignField': 'ObjectId(_id)',\n\t\t\t 'pipeline': [ {'$project': {'name': 1} } ],\n      'as':'BranchDetails'\n    },\t\n  }\n]"
+            "data": "[{\n$lookup:\n            {\n                from: \"ManageBranch\",\n                let: { pid: \"$branchId\" },\n                pipeline: [\n                    {\n                        $match: {\n                            $expr: {\n                                $eq: [\"$_id\", { $toObjectId: \"$$pid\" }]\n                            }\n                        }\n                    }\n                ],\n                as: \"BranchDetails\"\n            }\n    },\n]"
           }
         },
         "body": {
-          "data": "{\n  \"aggregate\": \"employees\",\n  \"pipeline\": [ {\"$sort\" : {\"_id\": 1} } ],\n  \"limit\": 10,\n  \"explain\": \"true\"\n}\n"
+          "data": "{\n  \"aggregate\": \"ManageArea\",\n  \"pipeline\": [ {\"$sort\" : {\"_id\": 1} } ],\n  \"limit\": 10,\n  \"explain\": \"true\"\n}\n"
         },
         "collection": {
-          "data": "employees"
+          "data": "ManageArea"
         },
         "command": {
           "data": "AGGREGATE"
@@ -107,7 +107,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Dashboard page_Query1",
+  "id": "Dashboard page_get_Aggregate_ManageArea",
   "deleted": false,
-  "gitSyncId": "63fc94fecb1e3d652d474330_63fdb3ac0f65376fd246c097"
+  "gitSyncId": "63fc94fecb1e3d652d474330_63fdecf6e36d60393680a4a8"
 }

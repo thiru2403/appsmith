@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "delete_ManageVehicle_1",
+    "name": "get_Aggregate_Expense",
     "datasource": {
       "name": "RoyalFinance",
       "pluginId": "mongo-plugin",
@@ -25,17 +25,17 @@
             "data": "10"
           },
           "arrayPipelines": {
-            "data": ""
+            "data": "[\n\t{\n\t\t\n\t$lookup:\n            {\n                from: \"ManageBranch\",\n                let: { pid: \"$branchId\" },\n                pipeline: [\n                    {\n                        $match: {\n                            $expr: {\n                                $eq: [\"$_id\", { $toObjectId: \"$$pid\" }]\n                            }\n                        }\n                    }\n                ],\n                as: \"BranchDetails\"\n            },\n\t},\n\t{\n$lookup:\n            {\n                from: \"employees\",\n                let: { pid: \"$expensesById\" },\n                pipeline: [\n                    {\n                        $match: {\n                            $expr: {\n                                $eq: [\"$_id\", { $toObjectId: \"$$pid\" }]\n                            }\n                        }\n                    }\n                ],\n                as: \"EmployeesDetails\"\n            },\n},\n]"
           }
         },
         "body": {
-          "data": "{\n  \"delete\": \"ManageVehicle\",\n  \"deletes\": [\n    {\n      \"q\": {\n        \"_id\": \"id_of_document_to_delete\"\n      },\n      \"limit\": 1\n    }\n  ]\n}\n"
+          "data": "{\n  \"aggregate\": \"Expenses\",\n  \"pipeline\": [ {\"$sort\" : {\"_id\": 1} } ],\n  \"limit\": 10,\n  \"explain\": \"true\"\n}\n"
         },
         "collection": {
-          "data": "ManageVehicle"
+          "data": "Expenses"
         },
         "command": {
-          "data": "DELETE"
+          "data": "AGGREGATE"
         },
         "count": {
           "query": {
@@ -47,7 +47,7 @@
             "data": "SINGLE"
           },
           "query": {
-            "data": "{ \"_id\": ObjectId(\"{{Table4.selectedRow._id}}\")}"
+            "data": ""
           }
         },
         "distinct": {
@@ -97,23 +97,17 @@
       }
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [
-      {
-        "key": "formData.delete.query.data"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "Table4.selectedRow._id"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Dashboard page_delete_ManageVehicle_1",
+  "id": "Dashboard page_get_Aggregate_Expense",
   "deleted": false,
-  "gitSyncId": "63e0d31cef0ac73ef4acc806_63f88c9952683f5077110c7d"
+  "gitSyncId": "63fc94fecb1e3d652d474330_63fdee61e36d60393680a4ab"
 }

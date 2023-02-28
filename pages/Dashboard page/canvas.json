@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1020,
+          "bottomRow": 860,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -2265,7 +2265,7 @@
                                         }
                                       ],
                                       "labelPosition": "Left",
-                                      "options": "{{get_ManageVehicle_1.data.map(\nres=>({\n\tlabel:res.makeName,\n\tvalue:res._id\n})\n)}}",
+                                      "options": "{{get_ManageVehicle_1.data.map(\nres=>({\n\tlabel:res.makeName,\n\tvalue:res._id\n})\n)}} ",
                                       "placeholderText": "{{FindById_Loans_1.data[0].vehicleDetails.make}}",
                                       "isDisabled": false,
                                       "key": "gdnqdh68eh",
@@ -13821,8 +13821,8 @@
               "dynamicPropertyPathList": [],
               "displayName": "Tabs",
               "iconSVG": "/static/media/icon.74a6d653c8201e66f1cd367a3fba2657.svg",
-              "topRow": 24,
-              "bottomRow": 102,
+              "topRow": 8,
+              "bottomRow": 86,
               "parentRowSpace": 10,
               "type": "TABS_WIDGET",
               "hideCard": false,
@@ -13834,7 +13834,7 @@
                   "key": "onTabSelected"
                 }
               ],
-              "leftColumn": 6,
+              "leftColumn": 12,
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
@@ -16717,9 +16717,6 @@
                           "key": "primaryColumns.quafication.computedValue"
                         },
                         {
-                          "key": "primaryColumns.branchName.computedValue"
-                        },
-                        {
                           "key": "primaryColumns._id.computedValue"
                         },
                         {
@@ -16744,13 +16741,16 @@
                           "key": "primaryColumns.customColumn2.boxShadow"
                         },
                         {
-                          "key": "tableData"
-                        },
-                        {
                           "key": "primaryColumns.branchId.computedValue"
                         },
                         {
                           "key": "primaryColumns.employeeName.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.empolyeeName.computedValue"
+                        },
+                        {
+                          "key": "tableData"
                         }
                       ],
                       "leftColumn": 1,
@@ -16807,7 +16807,8 @@
                         "_id",
                         "customColumn1",
                         "customColumn2",
-                        "branchId"
+                        "branchId",
+                        "empolyeeName"
                       ],
                       "dynamicPropertyPathList": [
                         {
@@ -16858,7 +16859,7 @@
                           "label": "Employee Name",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{EmployeeTable.processedTableData.map((currentRow, currentIndex) => ( Query1.data[0].BranchDetails))}}",
+                          "computedValue": "{{EmployeeTable.processedTableData.map((currentRow, currentIndex) => ( currentRow.employeeName))}}",
                           "validation": {},
                           "cellBackground": "",
                           "sticky": ""
@@ -17003,7 +17004,7 @@
                           "label": "Branch Name",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{EmployeeTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"branchName\"]))}}",
+                          "computedValue": "",
                           "validation": {},
                           "cellBackground": "",
                           "sticky": ""
@@ -17218,6 +17219,34 @@
                           "computedValue": "{{EmployeeTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"branchId\"]))}}",
                           "validation": {},
                           "cellBackground": ""
+                        },
+                        "empolyeeName": {
+                          "allowCellWrapping": false,
+                          "index": 12,
+                          "width": 150,
+                          "originalId": "empolyeeName",
+                          "id": "empolyeeName",
+                          "alias": "empolyeeName",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "empolyeeName",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{EmployeeTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"empolyeeName\"]))}}",
+                          "validation": {},
+                          "cellBackground": ""
                         }
                       },
                       "key": "byji720a4n",
@@ -17226,7 +17255,7 @@
                       "rightColumn": 62,
                       "textSize": "0.875rem",
                       "widgetId": "75zlzyynz9",
-                      "tableData": "{{get_Employee_1.data}}",
+                      "tableData": "{{getAggregate_Employee.data}}",
                       "label": "Data",
                       "searchKey": "",
                       "parentId": "wjgqvru0ed",
@@ -17378,7 +17407,7 @@
                       "displayName": "Tabs",
                       "iconSVG": "/static/media/icon.74a6d653c8201e66f1cd367a3fba2657.svg",
                       "topRow": 2,
-                      "bottomRow": 51,
+                      "bottomRow": 59,
                       "parentRowSpace": 10,
                       "type": "TABS_WIDGET",
                       "hideCard": false,
@@ -17403,7 +17432,7 @@
                           "tabId": "tab1",
                           "widgetName": "Canvas13",
                           "displayName": "Canvas",
-                          "bottomRow": 450,
+                          "bottomRow": 530,
                           "topRow": 0,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
@@ -17421,7 +17450,7 @@
                               "borderColor": "#E0DEDE",
                               "isVisibleDownload": true,
                               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-                              "topRow": 7,
+                              "topRow": 8,
                               "isSortable": true,
                               "type": "TABLE_WIDGET_V2",
                               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -17544,7 +17573,7 @@
                                 }
                               ],
                               "displayName": "Table",
-                              "bottomRow": 36,
+                              "bottomRow": 37,
                               "columnWidthMap": {
                                 "task": 245,
                                 "step": 62,
@@ -17999,7 +18028,7 @@
                                 "label"
                               ],
                               "topRow": 2,
-                              "bottomRow": 6,
+                              "bottomRow": 7,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -18061,7 +18090,7 @@
                           "tabId": "tab2",
                           "widgetName": "Canvas14",
                           "displayName": "Canvas",
-                          "bottomRow": 450,
+                          "bottomRow": 530,
                           "topRow": 0,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
@@ -18223,15 +18252,14 @@
                               "defaultPageSize": 0,
                               "columnOrder": [
                                 "_id",
+                                "PartnerDetails",
                                 "investement",
                                 "amount",
                                 "source",
                                 "comments",
                                 "customColumn1",
                                 "customColumn2",
-                                "partnerId",
-                                "PartnerDetails",
-                                "customColumn3"
+                                "partnerId"
                               ],
                               "dynamicPropertyPathList": [
                                 {
@@ -18485,7 +18513,7 @@
                                   "fontStyle": "",
                                   "enableFilter": true,
                                   "enableSort": true,
-                                  "isVisible": true,
+                                  "isVisible": false,
                                   "isDisabled": false,
                                   "isCellEditable": false,
                                   "isEditable": false,
@@ -18520,40 +18548,13 @@
                                   "isEditable": false,
                                   "isCellVisible": true,
                                   "isDerived": false,
-                                  "label": "PartnerDetails",
-                                  "isSaveVisible": true,
-                                  "isDiscardVisible": true,
-                                  "computedValue": "{{capitalTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"PartnerDetails\"]))}}",
-                                  "sticky": "",
-                                  "validation": {},
-                                  "cellBackground": ""
-                                },
-                                "customColumn3": {
-                                  "allowCellWrapping": false,
-                                  "index": 8,
-                                  "width": 150,
-                                  "originalId": "customColumn3",
-                                  "id": "customColumn3",
-                                  "alias": "PartnerName",
-                                  "horizontalAlignment": "CENTER",
-                                  "verticalAlignment": "CENTER",
-                                  "columnType": "text",
-                                  "textSize": "0.875rem",
-                                  "enableFilter": true,
-                                  "enableSort": true,
-                                  "isVisible": true,
-                                  "isDisabled": false,
-                                  "isCellEditable": false,
-                                  "isEditable": false,
-                                  "isCellVisible": true,
-                                  "isDerived": true,
                                   "label": "PartnerName",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "",
+                                  "computedValue": "{{capitalTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"PartnerDetails\"][0].name))}}",
+                                  "sticky": "",
                                   "validation": {},
-                                  "buttonStyle": "rgb(3, 179, 101)",
-                                  "labelColor": "#FFFFFF"
+                                  "cellBackground": ""
                                 }
                               },
                               "key": "cm5wkpnd3f",
@@ -18574,7 +18575,7 @@
                               "verticalAlignment": "CENTER"
                             },
                             {
-                              "resetFormOnClick": false,
+                              "resetFormOnClick": true,
                               "boxShadow": "none",
                               "widgetName": "Button24",
                               "onClick": "{{showModal('addCapitalModal')}}",
@@ -18643,7 +18644,7 @@
                           "widgetName": "Canvas16",
                           "displayName": "Canvas",
                           "topRow": 1,
-                          "bottomRow": 510,
+                          "bottomRow": 530,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
@@ -19405,7 +19406,7 @@
                           "widgetName": "Canvas28",
                           "displayName": "Canvas",
                           "topRow": 1,
-                          "bottomRow": 450,
+                          "bottomRow": 530,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
@@ -19558,13 +19559,13 @@
                                   "key": "tableData"
                                 },
                                 {
-                                  "key": "primaryColumns.branchName.computedValue"
-                                },
-                                {
                                   "key": "primaryColumns.areas.computedValue"
                                 },
                                 {
                                   "key": "primaryColumns.branchId.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.branchName.computedValue"
                                 }
                               ],
                               "leftColumn": 2,
@@ -19761,7 +19762,7 @@
                                   "label": "Branch Name",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"branchName\"]))}}",
+                                  "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( get_Aggregate_ManageArea.data))}}",
                                   "validation": {},
                                   "cellBackground": "",
                                   "sticky": ""
@@ -19860,7 +19861,7 @@
                           "widgetName": "Canvas34",
                           "displayName": "Canvas",
                           "topRow": 1,
-                          "bottomRow": 450,
+                          "bottomRow": 530,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
@@ -20365,7 +20366,7 @@
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "minDynamicHeight": 15
+                      "minDynamicHeight": 10
                     }
                   ],
                   "key": "izz8vgtk3b",
@@ -21395,7 +21396,7 @@
               "key": "7zlltcguvg",
               "backgroundColor": "#FFFFFF",
               "isDeprecated": false,
-              "rightColumn": 50,
+              "rightColumn": 54,
               "dynamicHeight": "FIXED",
               "widgetId": "bfmudpr57u",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -23309,7 +23310,7 @@
                       "minDynamicHeight": 4
                     },
                     {
-                      "resetFormOnClick": false,
+                      "resetFormOnClick": true,
                       "boxShadow": "none",
                       "widgetName": "Button25",
                       "onClick": "{{closeModal('addCapitalModal')}}",
@@ -31401,16 +31402,24 @@
           ],
           [
             {
-              "id": "Dashboard page_get_Aggregate_ManageCapital",
-              "name": "get_Aggregate_ManageCapital",
+              "id": "Dashboard page_getAggregate_Employee",
+              "name": "getAggregate_Employee",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Dashboard page_get_Employee_1",
-              "name": "get_Employee_1",
+              "id": "Dashboard page_get_Aggregate_ManageArea",
+              "name": "get_Aggregate_ManageArea",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Dashboard page_get_Aggregate_ManageCapital",
+              "name": "get_Aggregate_ManageCapital",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
@@ -31459,18 +31468,16 @@
           ],
           [
             {
-              "id": "Dashboard page_loans_count_1",
-              "name": "loans_count_1",
+              "id": "Dashboard page_get_Employee_1",
+              "name": "get_Employee_1",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
-            }
-          ],
-          [
+            },
             {
-              "id": "Dashboard page_Query1",
-              "name": "Query1",
+              "id": "Dashboard page_loans_count_1",
+              "name": "loans_count_1",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],

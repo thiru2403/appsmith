@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "ManageCapitalData_Js",
+    "pageId": "Dashboard page",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Dashboard page_ManageCapitalData_Js",
+  "deleted": false,
+  "gitSyncId": "63fc94fecb1e3d652d474330_63fdf6d8e36d60393680a4b7"
+}

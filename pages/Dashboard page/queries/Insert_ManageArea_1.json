@@ -77,7 +77,7 @@
         },
         "insert": {
           "documents": {
-            "data": "[{     \n\t\t\t\t\"branchName\":\"{{Select2.selectedOptionLabel}}\",\n\t      \"branchId\":\"{{Select2.selectedOptionValue}}\"\n\t\t\t\t\"areas\":\"{{Input22.text}}\"\n}]"
+            "data": "[{     \n\t\t\t\n\t      \"branchId\":\"{{Select2.selectedOptionValue}}\"\n\t\t\t\t\"areas\":\"{{Input22.text}}\"\n}]"
           }
         },
         "smartSubstitution": {
@@ -107,7 +107,6 @@
     "messages": [],
     "jsonPathKeys": [
       "Input22.text",
-      "Select2.selectedOptionLabel",
       "Select2.selectedOptionValue"
     ],
     "userSetOnLoad": false,
