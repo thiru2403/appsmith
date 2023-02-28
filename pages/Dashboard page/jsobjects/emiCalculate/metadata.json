@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "emiCalculate",
+    "pageId": "Dashboard page",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Dashboard page_emiCalculate",
+  "deleted": false,
+  "gitSyncId": "63fc965e0f9a922f3e6520e3_63fdbf616fe2142e9b78e49f"
+}
