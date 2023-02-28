@@ -16705,9 +16705,6 @@
                           "key": "boxShadow"
                         },
                         {
-                          "key": "primaryColumns.employeeName.computedValue"
-                        },
-                        {
                           "key": "primaryColumns.dateOfJoining.computedValue"
                         },
                         {
@@ -16751,6 +16748,9 @@
                         },
                         {
                           "key": "primaryColumns.branchId.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.employeeName.computedValue"
                         }
                       ],
                       "leftColumn": 1,
@@ -16858,7 +16858,7 @@
                           "label": "Employee Name",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{EmployeeTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"employeeName\"]))}}",
+                          "computedValue": "{{EmployeeTable.processedTableData.map((currentRow, currentIndex) => ( Query1.data[0].BranchDetails))}}",
                           "validation": {},
                           "cellBackground": "",
                           "sticky": ""
@@ -31461,6 +31461,16 @@
             {
               "id": "Dashboard page_loans_count_1",
               "name": "loans_count_1",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Dashboard page_Query1",
+              "name": "Query1",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],

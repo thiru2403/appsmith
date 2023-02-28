@@ -25,7 +25,7 @@
             "data": "10"
           },
           "arrayPipelines": {
-            "data": "[\n  {\n    '$lookup': {\n      'from': 'ManageBranch',\n      'localField': 'partnerId',\n      'foreignField': 'ObjectId(_id)',\n\t\t\t 'pipeline': [ {'$project': {'name': 1} } ],\n      'as':'PartnerDetails'\n    },\t\n  }\n]"
+            "data": "[\n  {\n    '$lookup': {\n      'from': 'ManageBranch',\n      'localField': 'branchId',\n      'foreignField': 'ObjectId(_id)',\n\t\t\t 'pipeline': [ {'$project': {'name': 1} } ],\n      'as':'BranchDetails'\n    },\t\n  }\n]"
           }
         },
         "body": {
@@ -96,7 +96,7 @@
         }
       }
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
