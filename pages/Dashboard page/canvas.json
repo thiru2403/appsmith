@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 820,
+          "bottomRow": 1020,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -13821,8 +13821,8 @@
               "dynamicPropertyPathList": [],
               "displayName": "Tabs",
               "iconSVG": "/static/media/icon.74a6d653c8201e66f1cd367a3fba2657.svg",
-              "topRow": 6,
-              "bottomRow": 82,
+              "topRow": 24,
+              "bottomRow": 102,
               "parentRowSpace": 10,
               "type": "TABS_WIDGET",
               "hideCard": false,
@@ -13834,7 +13834,7 @@
                   "key": "onTabSelected"
                 }
               ],
-              "leftColumn": 12,
+              "leftColumn": 6,
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
@@ -13854,7 +13854,7 @@
                   "tabId": "tab1",
                   "widgetName": "Canvas2",
                   "displayName": "Canvas",
-                  "bottomRow": 720,
+                  "bottomRow": 740,
                   "topRow": 0,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
@@ -14110,7 +14110,7 @@
                   "tabId": "tab2",
                   "widgetName": "Canvas3",
                   "displayName": "Canvas",
-                  "bottomRow": 720,
+                  "bottomRow": 740,
                   "topRow": 0,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
@@ -15941,7 +15941,7 @@
                   "widgetName": "Canvas4",
                   "displayName": "Canvas",
                   "topRow": 1,
-                  "bottomRow": 720,
+                  "bottomRow": 740,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -16672,7 +16672,7 @@
                   "widgetName": "Canvas5",
                   "displayName": "Canvas",
                   "topRow": 1,
-                  "bottomRow": 720,
+                  "bottomRow": 740,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -16750,7 +16750,7 @@
                           "key": "tableData"
                         },
                         {
-                          "key": "primaryColumns.empolyeeName.computedValue"
+                          "key": "primaryColumns.branchId.computedValue"
                         }
                       ],
                       "leftColumn": 1,
@@ -16807,7 +16807,7 @@
                         "_id",
                         "customColumn1",
                         "customColumn2",
-                        "empolyeeName"
+                        "branchId"
                       ],
                       "dynamicPropertyPathList": [
                         {
@@ -17191,13 +17191,13 @@
                           "onClick": "{{(()=>{\n\tFindById_Employee_1.run()\n\tshowModal('Modal8')\n})()}}",
                           "sticky": ""
                         },
-                        "empolyeeName": {
+                        "branchId": {
                           "allowCellWrapping": false,
-                          "index": 9,
+                          "index": 10,
                           "width": 150,
-                          "originalId": "empolyeeName",
-                          "id": "empolyeeName",
-                          "alias": "empolyeeName",
+                          "originalId": "branchId",
+                          "id": "branchId",
+                          "alias": "branchId",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
@@ -17212,10 +17212,10 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "empolyeeName",
+                          "label": "branchId",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{EmployeeTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"empolyeeName\"]))}}",
+                          "computedValue": "{{EmployeeTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"branchId\"]))}}",
                           "validation": {},
                           "cellBackground": ""
                         }
@@ -17359,7 +17359,7 @@
                   "widgetName": "Canvas12",
                   "displayName": "Canvas",
                   "topRow": 1,
-                  "bottomRow": 720,
+                  "bottomRow": 740,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -18230,7 +18230,8 @@
                                 "customColumn1",
                                 "customColumn2",
                                 "partnerId",
-                                "PartnerDetails"
+                                "PartnerDetails",
+                                "customColumn3"
                               ],
                               "dynamicPropertyPathList": [
                                 {
@@ -18526,6 +18527,33 @@
                                   "sticky": "",
                                   "validation": {},
                                   "cellBackground": ""
+                                },
+                                "customColumn3": {
+                                  "allowCellWrapping": false,
+                                  "index": 8,
+                                  "width": 150,
+                                  "originalId": "customColumn3",
+                                  "id": "customColumn3",
+                                  "alias": "PartnerName",
+                                  "horizontalAlignment": "CENTER",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "text",
+                                  "textSize": "0.875rem",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellEditable": false,
+                                  "isEditable": false,
+                                  "isCellVisible": true,
+                                  "isDerived": true,
+                                  "label": "PartnerName",
+                                  "isSaveVisible": true,
+                                  "isDiscardVisible": true,
+                                  "computedValue": "",
+                                  "validation": {},
+                                  "buttonStyle": "rgb(3, 179, 101)",
+                                  "labelColor": "#FFFFFF"
                                 }
                               },
                               "key": "cm5wkpnd3f",
@@ -18569,7 +18597,7 @@
                                   "key": "onClick"
                                 }
                               ],
-                              "leftColumn": 51,
+                              "leftColumn": 48,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "buttonColor"
@@ -20358,7 +20386,7 @@
                   "widgetName": "Canvas21",
                   "displayName": "Canvas",
                   "topRow": 1,
-                  "bottomRow": 720,
+                  "bottomRow": 740,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -21013,7 +21041,7 @@
                   "widgetName": "Canvas22",
                   "displayName": "Canvas",
                   "topRow": 1,
-                  "bottomRow": 720,
+                  "bottomRow": 740,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -21367,7 +21395,7 @@
               "key": "7zlltcguvg",
               "backgroundColor": "#FFFFFF",
               "isDeprecated": false,
-              "rightColumn": 56,
+              "rightColumn": 50,
               "dynamicHeight": "FIXED",
               "widgetId": "bfmudpr57u",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -21769,10 +21797,13 @@
                                 },
                                 {
                                   "key": "borderRadius"
+                                },
+                                {
+                                  "key": "options"
                                 }
                               ],
                               "labelPosition": "Left",
-                              "options": "[\n  {\n    \"label\": \"satchapuram\",\n    \"value\": \"satchapuram\"\n  },\n  {\n    \"label\": \"HouseBoard\",\n    \"value\": \"HouseBoard\"\n  },\n  {\n    \"label\": \"Lion\",\n    \"value\": \"Lion\"\n  }\n]",
+                              "options": "{{get_ManageBranch_1.data.map(\nres=>({\n\tlabel:res.branchName,\n\tvalue:res._id\n})\n)}}",
                               "labelStyle": "",
                               "placeholderText": "Select the Branch",
                               "isDisabled": false,
@@ -23157,7 +23188,7 @@
               "type": "MODAL_WIDGET",
               "hideCard": false,
               "shouldScrollContents": true,
-              "minHeight": 470,
+              "minHeight": 490,
               "animateLoading": true,
               "parentColumnSpace": 16.7109375,
               "leftColumn": 20,

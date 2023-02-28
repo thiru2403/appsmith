@@ -47,7 +47,7 @@
             "data": "SINGLE"
           },
           "query": {
-            "data": "{ \"_id\": ObjectId(\"{{Table1.selectedRow._id}}\") }"
+            "data": "{\"_id\": ObjectId(\"{{EmployeeTable.selectedRow._id}}\")}"
           }
         },
         "distinct": {
@@ -106,7 +106,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Table1.selectedRow._id"
+      "EmployeeTable.selectedRow._id"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

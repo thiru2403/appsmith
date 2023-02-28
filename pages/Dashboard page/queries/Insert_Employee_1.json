@@ -77,7 +77,7 @@
         },
         "insert": {
           "documents": {
-            "data": "[{      \n      \"address\": \"{{address.text}}\",\n      \"branchName\": \"{{Branch.selectedOptionValue}}\",\n      \"dateOfJoining\": \"{{joining.formattedDate}}\",\n      \"dateOfLeaving\": \"{{DatePicker3_leaving.formattedDate}}\",\n      \"employeeName\": \"{{employeename.text}}\",\n      \"isActive\": {{Switch1.isSwitchedOn}},\n      \"phoneNumber\": \"{{PhoneInput1.value}}\",\n      \"quafication\": \"{{quafication.text}}\",\n      \"shortName\": \"{{ShortName.text}}\",\n}]"
+            "data": "[{      \n      \"address\": \"{{address.text}}\",\n      \"branchName\": \"{{Branch.selectedOptionLabel}}\",\n\t \"branchId\": \"{{Branch.selectedOptionValue}}\",\n      \"dateOfJoining\": \"{{joining.formattedDate}}\",\n      \"dateOfLeaving\": \"{{DatePicker3_leaving.formattedDate}}\",\n      \"employeeName\": \"{{employeename.text}}\",\n\t \n      \"isActive\": {{Switch1.isSwitchedOn}},\n      \"phoneNumber\": \"{{PhoneInput1.value}}\",\n      \"quafication\": \"{{quafication.text}}\",\n      \"shortName\": \"{{ShortName.text}}\",\n}]"
           }
         },
         "smartSubstitution": {
@@ -106,6 +106,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
+      "Branch.selectedOptionLabel",
       "Branch.selectedOptionValue",
       "DatePicker3_leaving.formattedDate",
       "PhoneInput1.value",
