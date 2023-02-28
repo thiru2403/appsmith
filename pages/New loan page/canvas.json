@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 3340,
+          "bottomRow": 3390,
           "containerStyle": "none",
           "snapRows": 73,
           "parentRowSpace": 1,
@@ -32,8 +32,8 @@
               "isCanvas": true,
               "displayName": "Tabs",
               "iconSVG": "/static/media/icon.74a6d653c8201e66f1cd367a3fba2657.svg",
-              "topRow": 0,
-              "bottomRow": 326,
+              "topRow": 5,
+              "bottomRow": 331,
               "parentRowSpace": 10,
               "type": "TABS_WIDGET",
               "hideCard": false,
@@ -45,7 +45,7 @@
                   "key": "onTabSelected"
                 }
               ],
-              "leftColumn": 4,
+              "leftColumn": 5,
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
@@ -6156,7 +6156,7 @@
               "key": "7zlltcguvg",
               "backgroundColor": "#FFFFFF",
               "isDeprecated": false,
-              "rightColumn": 59,
+              "rightColumn": 60,
               "dynamicHeight": "FIXED",
               "widgetId": "irgbkvxn4i",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",

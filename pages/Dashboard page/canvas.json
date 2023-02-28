@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1292,
+          "bottomRow": 690,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -6660,7 +6660,7 @@
                         "submit"
                       ],
                       "topRow": 14,
-                      "bottomRow": 18,
+                      "bottomRow": 19,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -6708,7 +6708,7 @@
                         "submit"
                       ],
                       "topRow": 14,
-                      "bottomRow": 18,
+                      "bottomRow": 19,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -7370,7 +7370,7 @@
                         "submit"
                       ],
                       "topRow": 21,
-                      "bottomRow": 25,
+                      "bottomRow": 26,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -7425,7 +7425,7 @@
                         "submit"
                       ],
                       "topRow": 21,
-                      "bottomRow": 25,
+                      "bottomRow": 26,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -10547,12 +10547,12 @@
                 "notification"
               ],
               "topRow": 45,
-              "bottomRow": 69,
+              "bottomRow": 71,
               "parentRowSpace": 10,
               "type": "MODAL_WIDGET",
               "hideCard": false,
               "shouldScrollContents": true,
-              "minHeight": 710,
+              "minHeight": 730,
               "animateLoading": true,
               "parentColumnSpace": 18.1826171875,
               "leftColumn": 24,
@@ -10566,7 +10566,7 @@
                   "widgetName": "Canvas11Copy",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 710,
+                  "bottomRow": 730,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -11303,7 +11303,7 @@
                         "submit"
                       ],
                       "topRow": 63,
-                      "bottomRow": 67,
+                      "bottomRow": 69,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -11333,7 +11333,7 @@
                       "originalTopRow": 63,
                       "disabledWhenInvalid": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "originalBottomRow": 67,
+                      "originalBottomRow": 69,
                       "buttonVariant": "SECONDARY",
                       "placement": "CENTER"
                     },
@@ -11355,7 +11355,7 @@
                         "submit"
                       ],
                       "topRow": 63,
-                      "bottomRow": 67,
+                      "bottomRow": 69,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -11364,7 +11364,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 43,
+                      "leftColumn": 41,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -11390,7 +11390,7 @@
                       "originalTopRow": 63,
                       "disabledWhenInvalid": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "originalBottomRow": 67,
+                      "originalBottomRow": 69,
                       "buttonVariant": "PRIMARY",
                       "placement": "CENTER"
                     }
@@ -11409,7 +11409,7 @@
                 }
               ],
               "key": "qk3zsr9fmy",
-              "height": 710,
+              "height": 730,
               "isDeprecated": false,
               "rightColumn": 48,
               "detachFromLayout": true,
@@ -11746,12 +11746,12 @@
                 "notification"
               ],
               "topRow": 48,
-              "bottomRow": 69,
+              "bottomRow": 70,
               "parentRowSpace": 10,
               "type": "MODAL_WIDGET",
               "hideCard": false,
               "shouldScrollContents": true,
-              "minHeight": 710,
+              "minHeight": 720,
               "animateLoading": true,
               "parentColumnSpace": 18.1826171875,
               "leftColumn": 24,
@@ -11765,7 +11765,7 @@
                   "widgetName": "Canvas11",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 710,
+                  "bottomRow": 720,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -11777,7 +11777,7 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
-                      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+                      "boxShadow": "none",
                       "borderColor": "#E0DEDE",
                       "widgetName": "Form1Copy1Copy1Copy",
                       "isCanvas": true,
@@ -11799,13 +11799,11 @@
                       "shouldScrollContents": true,
                       "animateLoading": true,
                       "parentColumnSpace": 20.0625,
+                      "dynamicTriggerPathList": [],
                       "leftColumn": 1,
                       "dynamicBindingPathList": [
                         {
                           "key": "borderRadius"
-                        },
-                        {
-                          "key": "boxShadow"
                         }
                       ],
                       "children": [
@@ -12384,7 +12382,7 @@
                           "isLoading": false
                         }
                       ],
-                      "borderWidth": "1",
+                      "borderWidth": "",
                       "key": "6ipsr0dyv3",
                       "backgroundColor": "#FFFFFF",
                       "isDeprecated": false,
@@ -12481,7 +12479,7 @@
                       "widgetId": "x4cqqzh3nq",
                       "isVisible": true,
                       "fontStyle": "BOLD",
-                      "textColor": "#231F20",
+                      "textColor": "#3b82f6",
                       "version": 1,
                       "parentId": "lwvyj5dtrq",
                       "renderMode": "CANVAS",
@@ -12504,7 +12502,7 @@
                         "submit"
                       ],
                       "topRow": 63,
-                      "bottomRow": 67,
+                      "bottomRow": 68,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -12534,7 +12532,7 @@
                       "originalTopRow": 63,
                       "disabledWhenInvalid": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "originalBottomRow": 67,
+                      "originalBottomRow": 68,
                       "buttonVariant": "SECONDARY",
                       "placement": "CENTER"
                     },
@@ -12556,7 +12554,7 @@
                         "submit"
                       ],
                       "topRow": 63,
-                      "bottomRow": 67,
+                      "bottomRow": 68,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -12591,7 +12589,7 @@
                       "originalTopRow": 63,
                       "disabledWhenInvalid": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "originalBottomRow": 67,
+                      "originalBottomRow": 68,
                       "buttonVariant": "PRIMARY",
                       "placement": "CENTER"
                     }
@@ -12610,7 +12608,7 @@
                 }
               ],
               "key": "qk3zsr9fmy",
-              "height": 710,
+              "height": 720,
               "isDeprecated": false,
               "rightColumn": 48,
               "detachFromLayout": true,
@@ -15316,7 +15314,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button3",
-                      "onClick": "{{(()=>{\n\tstoreValue('flag',true,false)\n\tnavigateTo('New loan page')\n})()}}",
+                      "onClick": "{{(()=>{storeValue('flag',true,false)\n\tnavigateTo('New loan page')\n})()}}",
                       "buttonColor": "#556EE6",
                       "dynamicPropertyPathList": [
                         {
@@ -16789,6 +16787,12 @@
                         },
                         {
                           "key": "tableData"
+                        },
+                        {
+                          "key": "primaryColumns.branchId.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.empolyeeName.computedValue"
                         }
                       ],
                       "leftColumn": 2,
@@ -16844,7 +16848,9 @@
                         "isActive",
                         "_id",
                         "customColumn1",
-                        "customColumn2"
+                        "customColumn2",
+                        "branchId",
+                        "empolyeeName"
                       ],
                       "dynamicPropertyPathList": [
                         {
@@ -17227,6 +17233,62 @@
                           "customAlias": "",
                           "onClick": "{{(()=>{\n\tFindById_Employee_1.run()\n\tshowModal('Modal8')\n})()}}",
                           "sticky": ""
+                        },
+                        "branchId": {
+                          "allowCellWrapping": false,
+                          "index": 10,
+                          "width": 150,
+                          "originalId": "branchId",
+                          "id": "branchId",
+                          "alias": "branchId",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "branchId",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{EmployeeTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"branchId\"]))}}",
+                          "validation": {},
+                          "cellBackground": ""
+                        },
+                        "empolyeeName": {
+                          "allowCellWrapping": false,
+                          "index": 11,
+                          "width": 150,
+                          "originalId": "empolyeeName",
+                          "id": "empolyeeName",
+                          "alias": "empolyeeName",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "empolyeeName",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{EmployeeTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"empolyeeName\"]))}}",
+                          "validation": {},
+                          "cellBackground": ""
                         }
                       },
                       "key": "byji720a4n",
@@ -17270,7 +17332,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 52,
+                      "leftColumn": 49,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -17430,7 +17492,7 @@
                               "borderColor": "#E0DEDE",
                               "isVisibleDownload": true,
                               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-                              "topRow": 7,
+                              "topRow": 9,
                               "isSortable": true,
                               "type": "TABLE_WIDGET_V2",
                               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -17553,7 +17615,7 @@
                                 }
                               ],
                               "displayName": "Table",
-                              "bottomRow": 36,
+                              "bottomRow": 38,
                               "columnWidthMap": {
                                 "task": 245,
                                 "step": 62,
@@ -18142,7 +18204,7 @@
                               "borderColor": "#E0DEDE",
                               "isVisibleDownload": true,
                               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-                              "topRow": 8,
+                              "topRow": 10,
                               "isSortable": true,
                               "type": "TABLE_WIDGET_V2",
                               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -18176,9 +18238,6 @@
                                   "key": "primaryColumns.comments.computedValue"
                                 },
                                 {
-                                  "key": "primaryColumns.partnerName.computedValue"
-                                },
-                                {
                                   "key": "primaryColumns.source.computedValue"
                                 },
                                 {
@@ -18191,7 +18250,7 @@
                                   "key": "primaryColumns.PartnerDetails.computedValue"
                                 }
                               ],
-                              "leftColumn": 1,
+                              "leftColumn": 2,
                               "delimiter": ",",
                               "defaultSelectedRowIndex": 0,
                               "showInlineEditingOptionDropdown": true,
@@ -18235,7 +18294,6 @@
                               "defaultPageSize": 0,
                               "columnOrder": [
                                 "_id",
-                                "partnerName",
                                 "investement",
                                 "amount",
                                 "source",
@@ -18251,7 +18309,7 @@
                                 }
                               ],
                               "displayName": "Table",
-                              "bottomRow": 37,
+                              "bottomRow": 39,
                               "columnWidthMap": {
                                 "task": 245,
                                 "step": 62,
@@ -18453,35 +18511,6 @@
                                   "cellBackground": "",
                                   "sticky": ""
                                 },
-                                "partnerName": {
-                                  "allowCellWrapping": false,
-                                  "index": 3,
-                                  "width": 150,
-                                  "originalId": "partnerName",
-                                  "id": "partnerName",
-                                  "alias": "partnerName",
-                                  "horizontalAlignment": "CENTER",
-                                  "verticalAlignment": "CENTER",
-                                  "columnType": "text",
-                                  "textColor": "",
-                                  "textSize": "0.875rem",
-                                  "fontStyle": "",
-                                  "enableFilter": true,
-                                  "enableSort": true,
-                                  "isVisible": true,
-                                  "isDisabled": false,
-                                  "isCellEditable": false,
-                                  "isEditable": false,
-                                  "isCellVisible": true,
-                                  "isDerived": false,
-                                  "label": "Partner Name",
-                                  "isSaveVisible": true,
-                                  "isDiscardVisible": true,
-                                  "computedValue": "{{capitalTable.processedTableData.map((currentRow, currentIndex) => ( get_Aggregate_ManageCapital.data[0]?.PartnerDetails[0]?.name))}}",
-                                  "validation": {},
-                                  "cellBackground": "",
-                                  "sticky": ""
-                                },
                                 "source": {
                                   "allowCellWrapping": false,
                                   "index": 5,
@@ -18535,7 +18564,7 @@
                                   "label": "partnerId",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{capitalTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"partnerId\"]))}}",
+                                  "computedValue": "{{capitalTable.processedTableData.map((currentRow, currentIndex) => ( currentRow))}}",
                                   "sticky": "",
                                   "validation": {},
                                   "cellBackground": ""
@@ -18573,7 +18602,7 @@
                               "key": "cm5wkpnd3f",
                               "canFreezeColumn": false,
                               "isDeprecated": false,
-                              "rightColumn": 61,
+                              "rightColumn": 62,
                               "textSize": "0.875rem",
                               "widgetId": "rm9sjb365x",
                               "tableData": "{{get_Aggregate_ManageCapital.data}}",
@@ -19426,7 +19455,7 @@
                               "borderColor": "#E0DEDE",
                               "isVisibleDownload": true,
                               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-                              "topRow": 9,
+                              "topRow": 10,
                               "isSortable": true,
                               "type": "TABLE_WIDGET_V2",
                               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -19469,7 +19498,7 @@
                                   "key": "primaryColumns.branchId.computedValue"
                                 }
                               ],
-                              "leftColumn": 2,
+                              "leftColumn": 3,
                               "delimiter": ",",
                               "defaultSelectedRowIndex": 0,
                               "showInlineEditingOptionDropdown": true,
@@ -19524,7 +19553,7 @@
                                 }
                               ],
                               "displayName": "Table",
-                              "bottomRow": 33,
+                              "bottomRow": 34,
                               "columnWidthMap": {
                                 "task": 245,
                                 "step": 62,
@@ -19730,7 +19759,7 @@
                               "key": "6wyokjxlnl",
                               "canFreezeColumn": false,
                               "isDeprecated": false,
-                              "rightColumn": 60,
+                              "rightColumn": 61,
                               "textSize": "0.875rem",
                               "widgetId": "v59t7kx59p",
                               "tableData": "{{get_ManageArea_1.data}}",
@@ -20494,6 +20523,7 @@
                       "isVisible": true,
                       "enableClientSideSearch": true,
                       "version": 1,
+                      "textColor": "",
                       "totalRecordsCount": 0,
                       "isLoading": false,
                       "childStylesheet": {
@@ -20596,7 +20626,7 @@
                           "isDiscardVisible": true,
                           "computedValue": "{{expense.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"amount\"]))}}",
                           "validation": {},
-                          "cellBackground": "",
+                          "cellBackground": "#bfdbfe",
                           "sticky": ""
                         },
                         "branchName": {
@@ -20625,7 +20655,7 @@
                           "isDiscardVisible": true,
                           "computedValue": "{{expense.processedTableData.map((currentRow, currentIndex) => ( currentRow.branchName))}}",
                           "validation": {},
-                          "cellBackground": "",
+                          "cellBackground": "#bfdbfe",
                           "sticky": ""
                         },
                         "expensesName": {
@@ -20654,7 +20684,7 @@
                           "isDiscardVisible": true,
                           "computedValue": "{{expense.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"expensesName\"]))}}",
                           "validation": {},
-                          "cellBackground": "",
+                          "cellBackground": "#bfdbfe",
                           "sticky": ""
                         },
                         "_id": {
@@ -20683,7 +20713,7 @@
                           "isDiscardVisible": true,
                           "computedValue": "{{expense.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"_id\"]))}}",
                           "validation": {},
-                          "cellBackground": "",
+                          "cellBackground": "#bfdbfe",
                           "sticky": ""
                         },
                         "customColumn1": {
@@ -20718,7 +20748,9 @@
                           "customAlias": "",
                           "iconName": "delete",
                           "onClick": "{{showModal('Modal6CopyCopy1')}}",
-                          "sticky": ""
+                          "sticky": "",
+                          "cellBackground": "#bfdbfe",
+                          "textColor": ""
                         },
                         "customColumn2": {
                           "allowCellWrapping": false,
@@ -20751,7 +20783,9 @@
                           "boxShadow": "{{expense.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}",
                           "customAlias": "",
                           "onClick": "{{(()=>{\n\tFindById_Expense_1.run()\n\tshowModal('Modal10Copy')\n})()}}",
-                          "sticky": ""
+                          "sticky": "",
+                          "cellBackground": "#bfdbfe",
+                          "textColor": ""
                         },
                         "expensesBy": {
                           "allowCellWrapping": false,
@@ -20779,7 +20813,7 @@
                           "isDiscardVisible": true,
                           "computedValue": "{{expense.processedTableData.map((currentRow, currentIndex) => ( currentRow.expensesBy))}}",
                           "validation": {},
-                          "cellBackground": "",
+                          "cellBackground": "#bfdbfe",
                           "sticky": ""
                         },
                         "expensesCategory": {
@@ -20808,7 +20842,7 @@
                           "isDiscardVisible": true,
                           "computedValue": "{{expense.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"expensesCategory\"]))}}",
                           "validation": {},
-                          "cellBackground": "",
+                          "cellBackground": "#bfdbfe",
                           "sticky": ""
                         },
                         "EditActions1": {
@@ -20847,7 +20881,9 @@
                           "discardButtonVariant": "TERTIARY",
                           "isSaveDisabled": "{{expense.processedTableData.map((currentRow, currentIndex) => ( !expense.updatedRowIndices.includes(currentIndex)))}}",
                           "isDiscardDisabled": "{{expense.processedTableData.map((currentRow, currentIndex) => ( !expense.updatedRowIndices.includes(currentIndex)))}}",
-                          "sticky": ""
+                          "sticky": "",
+                          "cellBackground": "#bfdbfe",
+                          "textColor": ""
                         },
                         "branchId": {
                           "allowCellWrapping": false,
@@ -20876,7 +20912,7 @@
                           "computedValue": "{{expense.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"branchId\"]))}}",
                           "sticky": "",
                           "validation": {},
-                          "cellBackground": ""
+                          "cellBackground": "#bfdbfe"
                         },
                         "expensesById": {
                           "allowCellWrapping": false,
@@ -20905,7 +20941,7 @@
                           "computedValue": "{{expense.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"expensesById\"]))}}",
                           "sticky": "",
                           "validation": {},
-                          "cellBackground": ""
+                          "cellBackground": "#bfdbfe"
                         }
                       },
                       "key": "2aepefgv0x",
@@ -20922,6 +20958,7 @@
                       "horizontalAlignment": "CENTER",
                       "isVisibleSearch": true,
                       "isVisiblePagination": true,
+                      "cellBackground": "#bfdbfe",
                       "verticalAlignment": "CENTER"
                     }
                   ],
@@ -20956,7 +20993,7 @@
                   "children": [
                     {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                      "widgetName": "Tabs3",
+                      "widgetName": "Reports_Tab",
                       "borderColor": "#E0DEDE",
                       "isCanvas": true,
                       "displayName": "Tabs",
@@ -21019,7 +21056,7 @@
                               "fontFamily": "Inter",
                               "parentColumnSpace": 14.3492431640625,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 43,
+                              "leftColumn": 38,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "truncateButtonColor"
@@ -21044,8 +21081,10 @@
                               "parentId": "rk8y5k7e4f",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "originalTopRow": 2,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
+                              "originalBottomRow": 7,
                               "fontSize": "1rem",
                               "minDynamicHeight": 4
                             },
@@ -21120,7 +21159,7 @@
                               "fontFamily": "Inter",
                               "parentColumnSpace": 14.3492431640625,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 43,
+                              "leftColumn": 38,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "truncateButtonColor"
@@ -21145,8 +21184,10 @@
                               "parentId": "rk8y5k7e4f",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "originalTopRow": 6,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
+                              "originalBottomRow": 11,
                               "fontSize": "1rem",
                               "minDynamicHeight": 4
                             },
@@ -21183,7 +21224,7 @@
                               "text": "52,560",
                               "key": "in764h6gza",
                               "isDeprecated": false,
-                              "rightColumn": 56,
+                              "rightColumn": 60,
                               "textAlign": "LEFT",
                               "dynamicHeight": "AUTO_HEIGHT",
                               "widgetId": "ggtp4h8fk0",
@@ -21194,8 +21235,10 @@
                               "parentId": "rk8y5k7e4f",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "originalTopRow": 6,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
+                              "originalBottomRow": 11,
                               "fontSize": "1rem",
                               "minDynamicHeight": 4
                             }
@@ -21226,13 +21269,221 @@
                           "shouldScrollContents": false,
                           "minHeight": 350,
                           "parentColumnSpace": 1,
+                          "dynamicTriggerPathList": [],
                           "leftColumn": 0,
                           "dynamicBindingPathList": [],
-                          "children": [],
+                          "children": [
+                            {
+                              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+                              "borderColor": "#E0DEDE",
+                              "isVisibleDownload": true,
+                              "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
+                              "topRow": 3,
+                              "isSortable": true,
+                              "type": "TABLE_WIDGET_V2",
+                              "inlineEditingSaveOption": "ROW_LEVEL",
+                              "animateLoading": true,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "primaryColumns.step.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.task.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.status.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.action.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.action.buttonColor"
+                                },
+                                {
+                                  "key": "primaryColumns.action.borderRadius"
+                                },
+                                {
+                                  "key": "primaryColumns.action.boxShadow"
+                                },
+                                {
+                                  "key": "accentColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "boxShadow"
+                                }
+                              ],
+                              "leftColumn": 2,
+                              "delimiter": ",",
+                              "defaultSelectedRowIndex": 0,
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "isVisibleFilters": true,
+                              "isVisible": true,
+                              "enableClientSideSearch": true,
+                              "version": 1,
+                              "totalRecordsCount": 0,
+                              "isLoading": false,
+                              "childStylesheet": {
+                                "button": {
+                                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                  "boxShadow": "none"
+                                },
+                                "menuButton": {
+                                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                  "boxShadow": "none"
+                                },
+                                "iconButton": {
+                                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                  "boxShadow": "none"
+                                },
+                                "editActions": {
+                                  "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                                  "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                  "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                                  "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                                }
+                              },
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "defaultSelectedRowIndices": [
+                                0
+                              ],
+                              "widgetName": "emiScheduleTable",
+                              "defaultPageSize": 0,
+                              "columnOrder": [
+                                "step",
+                                "task",
+                                "status",
+                                "action"
+                              ],
+                              "dynamicPropertyPathList": [],
+                              "displayName": "Table",
+                              "bottomRow": 31,
+                              "columnWidthMap": {
+                                "task": 245,
+                                "step": 62,
+                                "status": 75
+                              },
+                              "parentRowSpace": 10,
+                              "hideCard": false,
+                              "parentColumnSpace": 12.11163330078125,
+                              "dynamicTriggerPathList": [],
+                              "borderWidth": "1",
+                              "primaryColumns": {
+                                "step": {
+                                  "index": 0,
+                                  "width": 150,
+                                  "id": "step",
+                                  "originalId": "step",
+                                  "alias": "step",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "text",
+                                  "textSize": "0.875rem",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isCellVisible": true,
+                                  "isCellEditable": false,
+                                  "isDerived": false,
+                                  "label": "step",
+                                  "computedValue": "{{emiScheduleTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"step\"]))}}",
+                                  "validation": {},
+                                  "labelColor": "#FFFFFF"
+                                },
+                                "task": {
+                                  "index": 1,
+                                  "width": 150,
+                                  "id": "task",
+                                  "originalId": "task",
+                                  "alias": "task",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "text",
+                                  "textSize": "0.875rem",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isCellVisible": true,
+                                  "isCellEditable": false,
+                                  "isDerived": false,
+                                  "label": "task",
+                                  "computedValue": "{{emiScheduleTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"task\"]))}}",
+                                  "validation": {},
+                                  "labelColor": "#FFFFFF"
+                                },
+                                "status": {
+                                  "index": 2,
+                                  "width": 150,
+                                  "id": "status",
+                                  "originalId": "status",
+                                  "alias": "status",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "text",
+                                  "textSize": "0.875rem",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isCellVisible": true,
+                                  "isCellEditable": false,
+                                  "isDerived": false,
+                                  "label": "status",
+                                  "computedValue": "{{emiScheduleTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status\"]))}}",
+                                  "validation": {},
+                                  "labelColor": "#FFFFFF"
+                                },
+                                "action": {
+                                  "index": 3,
+                                  "width": 150,
+                                  "id": "action",
+                                  "originalId": "action",
+                                  "alias": "action",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "button",
+                                  "textSize": "0.875rem",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isCellVisible": true,
+                                  "isCellEditable": false,
+                                  "isDisabled": false,
+                                  "isDerived": false,
+                                  "label": "action",
+                                  "onClick": "{{currentRow.step === '#1' ? showAlert('Done', 'success') : currentRow.step === '#2' ? navigateTo('https://docs.appsmith.com/core-concepts/connecting-to-data-sources/querying-a-database',undefined,'NEW_WINDOW') : navigateTo('https://docs.appsmith.com/core-concepts/displaying-data-read/display-data-tables',undefined,'NEW_WINDOW')}}",
+                                  "computedValue": "{{emiScheduleTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"action\"]))}}",
+                                  "validation": {},
+                                  "labelColor": "#FFFFFF",
+                                  "buttonColor": "{{emiScheduleTable.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
+                                  "borderRadius": "{{emiScheduleTable.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+                                  "boxShadow": "{{emiScheduleTable.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}"
+                                }
+                              },
+                              "key": "nxj0wjefb1",
+                              "isDeprecated": false,
+                              "rightColumn": 62,
+                              "textSize": "0.875rem",
+                              "widgetId": "x81zs36q9r",
+                              "tableData": "",
+                              "label": "Data",
+                              "searchKey": "",
+                              "parentId": "7xew06objr",
+                              "renderMode": "CANVAS",
+                              "horizontalAlignment": "LEFT",
+                              "isVisibleSearch": true,
+                              "isVisiblePagination": true,
+                              "verticalAlignment": "CENTER"
+                            }
+                          ],
                           "isDisabled": false,
                           "key": "dpaakzsdzp",
                           "isDeprecated": false,
-                          "tabName": "Tab 2",
+                          "tabName": "Emi Scedule",
                           "rightColumn": 369.1875,
                           "detachFromLayout": true,
                           "widgetId": "7xew06objr",
@@ -21262,7 +21513,7 @@
                           "index": 0
                         },
                         "tab2": {
-                          "label": "Tab 2",
+                          "label": "Emi Scedule",
                           "id": "tab2",
                           "widgetId": "7xew06objr",
                           "isVisible": true,
@@ -22171,7 +22422,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "New Employee",
+                      "text": "Add Employee",
                       "key": "wq5c5ewh42",
                       "isDeprecated": false,
                       "rightColumn": 41,
@@ -22335,7 +22586,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "New Partner",
+                      "text": "Add Partner",
                       "key": "6usle3d1lf",
                       "isDeprecated": false,
                       "rightColumn": 41,
@@ -23082,12 +23333,12 @@
                 "notification"
               ],
               "topRow": 4,
-              "bottomRow": 474,
+              "bottomRow": 494,
               "parentRowSpace": 10,
               "type": "MODAL_WIDGET",
               "hideCard": false,
               "shouldScrollContents": true,
-              "minHeight": 470,
+              "minHeight": 510,
               "animateLoading": true,
               "parentColumnSpace": 16.7109375,
               "leftColumn": 20,
@@ -23101,7 +23352,7 @@
                   "widgetName": "Canvas19",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 470,
+                  "bottomRow": 490,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -23219,8 +23470,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 40,
-                      "bottomRow": 44,
+                      "topRow": 42,
+                      "bottomRow": 46,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -23276,8 +23527,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 41,
-                      "bottomRow": 45,
+                      "topRow": 43,
+                      "bottomRow": 47,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -23560,7 +23811,7 @@
                         "textarea"
                       ],
                       "topRow": 30,
-                      "bottomRow": 38,
+                      "bottomRow": 40,
                       "parentRowSpace": 10,
                       "labelWidth": "20",
                       "autoFocus": false,
@@ -23623,7 +23874,7 @@
                 }
               ],
               "key": "18t0l5rvot",
-              "height": 470,
+              "height": 490,
               "isDeprecated": false,
               "rightColumn": 44,
               "detachFromLayout": true,
