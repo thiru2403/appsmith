@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 790,
+          "bottomRow": 820,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -3895,7 +3895,7 @@
                                       "maxDynamicHeight": 9000,
                                       "originalBottomRow": 32,
                                       "iconAlign": "left",
-                                      "defaultText": "{{FindById_Loans_1.data[0].LoanDetails.ProcessingFees}}",
+                                      "defaultText": "{{FindById_ManageBranch_1.data[0].ProcessingFees}}",
                                       "minDynamicHeight": 4
                                     },
                                     {
@@ -3954,6 +3954,7 @@
                                       "boxShadow": "none",
                                       "widgetName": "branchSelectCopy",
                                       "isFilterable": true,
+                                      "dynamicPropertyPathList": [],
                                       "displayName": "Select",
                                       "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
                                       "labelText": "Branch",
@@ -3971,7 +3972,11 @@
                                       "defaultOptionValue": "",
                                       "animateLoading": true,
                                       "parentColumnSpace": 14.385284423828125,
-                                      "dynamicTriggerPathList": [],
+                                      "dynamicTriggerPathList": [
+                                        {
+                                          "key": "onOptionChange"
+                                        }
+                                      ],
                                       "leftColumn": 4,
                                       "dynamicBindingPathList": [
                                         {
@@ -4009,11 +4014,13 @@
                                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                                       "maxDynamicHeight": 9000,
                                       "originalBottomRow": 14,
+                                      "onOptionChange": "{{FindById_Loans_1.run()}}",
                                       "minDynamicHeight": 4
                                     },
                                     {
                                       "boxShadow": "none",
                                       "widgetName": "Input3Copy2Copy",
+                                      "dynamicPropertyPathList": [],
                                       "displayName": "Input",
                                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                                       "searchTags": [
@@ -4063,6 +4070,7 @@
                                       "label": "Loan Period",
                                       "version": 2,
                                       "parentId": "2lp02q7p2t",
+                                      "onFocus": "",
                                       "labelAlignment": "left",
                                       "renderMode": "CANVAS",
                                       "isLoading": false,
@@ -4762,7 +4770,7 @@
                               "resetFormOnClick": false,
                               "boxShadow": "none",
                               "widgetName": "Button2CopyCopy",
-                              "onClick": "{{update_Loans_1.run( ()=>{\n\tGet_Loans.run()\n\t\n})}}",
+                              "onClick": "{{update_Loans_1.run(\n()=>{\n\tGet_Loans.run();\n\tcloseModal('viewModalCopy')\n}\n)}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "dynamicPropertyPathList": [
                                 {
@@ -7569,12 +7577,12 @@
                 "notification"
               ],
               "topRow": 87,
-              "bottomRow": 907,
+              "bottomRow": 887,
               "parentRowSpace": 10,
               "type": "MODAL_WIDGET",
               "hideCard": false,
               "shouldScrollContents": true,
-              "minHeight": 840,
+              "minHeight": 820,
               "animateLoading": true,
               "parentColumnSpace": 15.0703125,
               "leftColumn": 21,
@@ -7588,7 +7596,7 @@
                   "widgetName": "Canvas24Copy",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 820,
+                  "bottomRow": 800,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -7616,8 +7624,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 75,
-                      "bottomRow": 80,
+                      "topRow": 73,
+                      "bottomRow": 78,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -7762,8 +7770,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 75,
-                      "bottomRow": 80,
+                      "topRow": 73,
+                      "bottomRow": 78,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -8186,12 +8194,13 @@
                         "textarea"
                       ],
                       "topRow": 51,
-                      "bottomRow": 57,
+                      "bottomRow": 55,
                       "parentRowSpace": 10,
                       "labelWidth": "23",
                       "autoFocus": false,
                       "type": "INPUT_WIDGET_V2",
                       "hideCard": false,
+                      "shouldScrollContents": true,
                       "animateLoading": true,
                       "parentColumnSpace": 6.9375,
                       "dynamicTriggerPathList": [],
@@ -8217,7 +8226,7 @@
                       "isRequired": true,
                       "isDeprecated": false,
                       "rightColumn": 61,
-                      "dynamicHeight": "FIXED",
+                      "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "x441ufhb3i",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "showStepArrows": false,
@@ -8247,8 +8256,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 58,
-                      "bottomRow": 63,
+                      "topRow": 56,
+                      "bottomRow": 61,
                       "parentRowSpace": 10,
                       "labelWidth": "23",
                       "autoFocus": false,
@@ -8309,8 +8318,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 64,
-                      "bottomRow": 71,
+                      "topRow": 62,
+                      "bottomRow": 69,
                       "parentRowSpace": 10,
                       "labelWidth": "23",
                       "autoFocus": false,
@@ -8375,7 +8384,7 @@
                 }
               ],
               "key": "0hj88giuba",
-              "height": 820,
+              "height": 800,
               "isDeprecated": false,
               "rightColumn": 45,
               "detachFromLayout": true,
@@ -11552,7 +11561,7 @@
                       "resetFormOnClick": true,
                       "boxShadow": "none",
                       "widgetName": "Button16Copy",
-                      "onClick": "{{delete_ManageVehicle_1.run(\n  () =>{\n\t\tcloseModal('Modal6Copy')\n    get_ManageVehicle_1.run()\n\t\tshowAlert('Deleted','sucess')\n\t}\n)}}",
+                      "onClick": "{{delete_ManageVehicle_1.run(\n  () =>{\n\t\n    get_ManageVehicle_1.run()\n\t\t\tcloseModal('Modal6Copy')\n\t\tshowAlert('Deleted','sucess')\n\t}\n)}}",
                       "buttonColor": "#ef4444",
                       "dynamicPropertyPathList": [
                         {
@@ -12779,7 +12788,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 34,
+                      "leftColumn": 39,
                       "dynamicBindingPathList": [
                         {
                           "key": "borderRadius"
@@ -12789,7 +12798,7 @@
                       "isDisabled": false,
                       "key": "2vj4zposc4",
                       "isDeprecated": false,
-                      "rightColumn": 50,
+                      "rightColumn": 55,
                       "isDefaultClickDisabled": true,
                       "widgetId": "j3qgqyaaya",
                       "buttonStyle": "PRIMARY_BUTTON",
@@ -13812,8 +13821,8 @@
               "dynamicPropertyPathList": [],
               "displayName": "Tabs",
               "iconSVG": "/static/media/icon.74a6d653c8201e66f1cd367a3fba2657.svg",
-              "topRow": 1,
-              "bottomRow": 79,
+              "topRow": 6,
+              "bottomRow": 82,
               "parentRowSpace": 10,
               "type": "TABS_WIDGET",
               "hideCard": false,
@@ -13825,7 +13834,7 @@
                   "key": "onTabSelected"
                 }
               ],
-              "leftColumn": 0,
+              "leftColumn": 12,
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
@@ -13845,7 +13854,7 @@
                   "tabId": "tab1",
                   "widgetName": "Canvas2",
                   "displayName": "Canvas",
-                  "bottomRow": 740,
+                  "bottomRow": 720,
                   "topRow": 0,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
@@ -14101,7 +14110,7 @@
                   "tabId": "tab2",
                   "widgetName": "Canvas3",
                   "displayName": "Canvas",
-                  "bottomRow": 740,
+                  "bottomRow": 720,
                   "topRow": 0,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
@@ -15291,7 +15300,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 50,
+                      "leftColumn": 47,
                       "dynamicBindingPathList": [
                         {
                           "key": "borderRadius"
@@ -15846,7 +15855,7 @@
                       "key": "o1e8bpez79",
                       "backgroundColor": "",
                       "isDeprecated": false,
-                      "rightColumn": 61,
+                      "rightColumn": 63,
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "fjddsv6l7t",
                       "containerStyle": "card",
@@ -15932,7 +15941,7 @@
                   "widgetName": "Canvas4",
                   "displayName": "Canvas",
                   "topRow": 1,
-                  "bottomRow": 740,
+                  "bottomRow": 720,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -16663,7 +16672,7 @@
                   "widgetName": "Canvas5",
                   "displayName": "Canvas",
                   "topRow": 1,
-                  "bottomRow": 740,
+                  "bottomRow": 720,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -16680,7 +16689,7 @@
                       "borderColor": "#E0DEDE",
                       "isVisibleDownload": true,
                       "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-                      "topRow": 11,
+                      "topRow": 13,
                       "isSortable": true,
                       "type": "TABLE_WIDGET_V2",
                       "inlineEditingSaveOption": "ROW_LEVEL",
@@ -16744,7 +16753,7 @@
                           "key": "primaryColumns.empolyeeName.computedValue"
                         }
                       ],
-                      "leftColumn": 2,
+                      "leftColumn": 1,
                       "delimiter": ",",
                       "defaultSelectedRowIndex": 0,
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -16806,7 +16815,7 @@
                         }
                       ],
                       "displayName": "Table",
-                      "bottomRow": 39,
+                      "bottomRow": 41,
                       "columnWidthMap": {
                         "task": 245,
                         "step": 62,
@@ -17214,7 +17223,7 @@
                       "key": "byji720a4n",
                       "canFreezeColumn": false,
                       "isDeprecated": false,
-                      "rightColumn": 63,
+                      "rightColumn": 62,
                       "textSize": "0.875rem",
                       "widgetId": "75zlzyynz9",
                       "tableData": "{{get_Employee_1.data}}",
@@ -17252,7 +17261,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 52,
+                      "leftColumn": 47,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -17350,7 +17359,7 @@
                   "widgetName": "Canvas12",
                   "displayName": "Canvas",
                   "topRow": 1,
-                  "bottomRow": 740,
+                  "bottomRow": 720,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -17507,7 +17516,7 @@
                                 }
                               },
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "originalBottomRow": 44,
+                              "originalBottomRow": 37,
                               "columnUpdatedAt": 1677471052694,
                               "primaryColumnId": "_id",
                               "defaultSelectedRowIndices": [
@@ -17925,7 +17934,7 @@
                               "renderMode": "CANVAS",
                               "horizontalAlignment": "CENTER",
                               "isVisibleSearch": false,
-                              "originalTopRow": 15,
+                              "originalTopRow": 8,
                               "isVisiblePagination": true,
                               "verticalAlignment": "CENTER"
                             },
@@ -17953,7 +17962,7 @@
                                   "key": "onClick"
                                 }
                               ],
-                              "leftColumn": 51,
+                              "leftColumn": 48,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "buttonColor"
@@ -18027,10 +18036,10 @@
                               "parentId": "xbsovsabb0",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "originalTopRow": 11,
+                              "originalTopRow": 2,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 15,
+                              "originalBottomRow": 7,
                               "fontSize": "1rem",
                               "minDynamicHeight": 4
                             }
@@ -19880,9 +19889,6 @@
                                 },
                                 {
                                   "key": "primaryColumns.customColumn2.boxShadow"
-                                },
-                                {
-                                  "key": "primaryColumns.MakeName.computedValue"
                                 }
                               ],
                               "leftColumn": 1,
@@ -19931,8 +19937,7 @@
                                 "Model",
                                 "Color",
                                 "customColumn2",
-                                "customColumn1",
-                                "MakeName"
+                                "customColumn1"
                               ],
                               "dynamicPropertyPathList": [
                                 {
@@ -20142,34 +20147,6 @@
                                   "customAlias": "",
                                   "iconName": "add",
                                   "onClick": "{{(()=>{\n\tFindById_ManageVehicle_1.run()\n\tshowModal('Modal14Copy')\n})()}}"
-                                },
-                                "MakeName": {
-                                  "allowCellWrapping": false,
-                                  "index": 2,
-                                  "width": 150,
-                                  "originalId": "MakeName",
-                                  "id": "MakeName",
-                                  "alias": "MakeName",
-                                  "horizontalAlignment": "LEFT",
-                                  "verticalAlignment": "CENTER",
-                                  "columnType": "text",
-                                  "textColor": "",
-                                  "textSize": "0.875rem",
-                                  "fontStyle": "",
-                                  "enableFilter": true,
-                                  "enableSort": true,
-                                  "isVisible": false,
-                                  "isDisabled": false,
-                                  "isCellEditable": false,
-                                  "isEditable": false,
-                                  "isCellVisible": true,
-                                  "isDerived": false,
-                                  "label": "MakeName",
-                                  "isSaveVisible": true,
-                                  "isDiscardVisible": true,
-                                  "computedValue": "{{Table4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"MakeName\"]))}}",
-                                  "validation": {},
-                                  "cellBackground": ""
                                 }
                               },
                               "key": "x3he5e8w3q",
@@ -20381,7 +20358,7 @@
                   "widgetName": "Canvas21",
                   "displayName": "Canvas",
                   "topRow": 1,
-                  "bottomRow": 740,
+                  "bottomRow": 720,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -21036,7 +21013,7 @@
                   "widgetName": "Canvas22",
                   "displayName": "Canvas",
                   "topRow": 1,
-                  "bottomRow": 740,
+                  "bottomRow": 720,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -21390,7 +21367,7 @@
               "key": "7zlltcguvg",
               "backgroundColor": "#FFFFFF",
               "isDeprecated": false,
-              "rightColumn": 39,
+              "rightColumn": 56,
               "dynamicHeight": "FIXED",
               "widgetId": "bfmudpr57u",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -31451,6 +31428,16 @@
           ],
           [
             {
+              "id": "Dashboard page_loans_count_1",
+              "name": "loans_count_1",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
               "id": "Dashboard page_get_user",
               "name": "get_user",
               "confirmBeforeExecute": false,
@@ -31458,14 +31445,6 @@
               "jsonPathKeys": [
                 "appsmith.store.access_token"
               ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Dashboard page_loans_count_1",
-              "name": "loans_count_1",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             }
           ],

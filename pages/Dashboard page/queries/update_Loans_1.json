@@ -91,7 +91,7 @@
             "data": "{\"_id\": ObjectId(\"{{Table1.selectedRow._id}}\")}"
           },
           "update": {
-            "data": "[{\n\t\"newloans\":{\n\t\t\"loanNumber\":\"{{UloanNumber.text}}\",\n\t\t\"flag\":\"{{Uflag.text}}\"\n\t},\n\t\"borrower\":{\n\t\t\"aadharNumber\":\"{{input1_1Copy.text}}\",\n\t\t\"phoneNumber\":\"{{borrowerPhoneNumberCopy.text}}\",\n\t\t\"name\":\"{{boerrowerNameCopy.text}}\",\n\t\t\"address\":\"{{BoerrowerAddressCopy.text}}\",\n\t\t\"landMark\":\"{{BoerrowerLandmarkCopy.text}}\",\n\t\t\"alternativeNumbner\":\"{{boerrowerAlterNumberCopy.text}}\",\n\t},\n\t\"coBorrower\":{\n\t\t\t\"aadhaarNumber\":\"{{UCaadhar.text}}\",\n\t\t\"phoneNumber\":\"{{UCphone.text}}\",\n\t\t\"name\":\"{{UCname.text}}\",\n\t\t\"address\":\"{{UCaddress.text}}\",\n\t\t\"landMark\":\"{{UClandmark.text}}\",\n\t\t\"alternativeNumbner\":\"{{UCalter.text}}\",\n\t},\n\t\"reference\":{\n\t\t\"refferName\":\"{{refererNameCopy.text}}\",\n\t\t\"commisionType\":\"{{commisionSelectCopy.selectedOptionValue}}\",\n\t\t\"commisionAmount\":\"{{refererAmountCopy.text}}\"\n\t},\n\t\t\"vehicleDetails\":{\n\t\t\t\"makeId\":\"{{makeSelectCopy.selectedOptionValue}}\",\n\t\t\"model\":\"{{modelSelectCopy.selectedOptionLabel}}\",\n\t\t\t\t\"modelId\":\"{{modelSelectCopy.selectedOptionValue}}\",\n\t\t\"colour\":\"{{colourSelectCopy.selectedOptionLabel}}\",\n\t\t\t\"colourId\":\"{{colourSelectCopy.selectedOptionValue}}\",\n\t\t\"vehicleNumber\":\"{{vehcielNumberCopy.text}}\",\n\t\t\"monthYear\":\"{{monthyearCopy.selectedDate}}\",\n\t\t\"chassisNumber\":\"{{chassisNumberCopy.text}}\",\n\t\t\"engineNumber\":\"{{engineNumberCopy.text}}\",\n\t\t\"keyNumber\":\"{{keyNumberCopy.text}}\",\n\t\t\"dateOfReg\":\"{{dateOfRegCopy.selectedDate}}\"\t\n\t},\n\t\t\"insuranceDetails\":{\n\t\t\"insurance\":{\n\t\t\t\"insuranceNumber\":\"{{insuranceNumberCopy1.text}}\",\n\t\t\t\"companyName\":\"{{insuranceNumberCopyCopy.text}}\",\n\t\t\t\"expiryDate\":\"{{insuranceExpiryDateCopy.selectedDate}}\"\n\t\t},\n\t\t\"endrosenment\":{\n\t\t\t\"endrosenmentNumber\":\"{{endrosenmentNumberCopy.text}}\",\n\t\t\t\"endrosenmentDate\":\"{{endrosnmentDateCopy.selectedDate}}\"\n\t\t}\n\t},\n\t\"vehcileImage\":{\n\t},\n\t\t\"LoanDetails\":{\n\t\t\"Branch\":\"{{branchSelectCopy.selectedOptionLabel}}\",\n\t\t\t\"BranchId\":\"{{branchSelectCopy.selectedOptionValue}}\",\n\t\t\"Date\":\"{{loanDeatDateCopy.formattedDate}}\",\n\t\t\"FinanceAmount\":\"{{financeAmountCopy.text}}\",\n\t\t\"ProcessingFees\":\"{{Input5Copy2Copy.text}}\",\n\t\t\"FinanceRate\":\"{{financeRateCopy.text}}\",\n\t\t\"LoanPeriod\":\"{{Input3Copy2Copy.text}}\",\n\t\t\"EMIAmount\":\"{{emiAmountCopy.text}}\",\n\t\t\"FirstEMIDue\":\"{{firstEmiDateCopy.formattedDate}}\",\n\t\t\"secondEMIdue\":\"{{secondEmiDateCopy.formattedDate}}\",\n\t\"ThirdEMIdue\":\"{{thirdEmiDateCopy.formattedDate}}\"\n\t},\n\"Remark\":{\n\t\"remark\":\"{{remarksCopy.text}}\"\n},\n\t\"PaymentType\":{\n\t\"area\":\"{{Select1Copy2Copy.selectedOptionLabel}}\",\n\t\t\t\"areaId\":\"{{Select1Copy2Copy.selectedOptionValue}}\",\n\t\"collectorName\":\"{{Select2Copy1Copy.selectedOptionLabel}}\",\n\t\t\t\"collectorId\":\"{{Select2Copy1Copy.selectedOptionValue}}\"\n\t}\n}]"
+            "data": "{ \"$set\": {\"newloans\":{\n\t\t\"loanNumber\":\"{{UloanNumber.text}}\",\n\t\t\"flag\":\"{{Uflag.text}}\"\n\t},\n\t\"borrower\":{\n\t\t\"aadharNumber\":\"{{input1_1Copy.text}}\",\n\t\t\"phoneNumber\":\"{{borrowerPhoneNumberCopy.text}}\",\n\t\t\"name\":\"{{boerrowerNameCopy.text}}\",\n\t\t\"address\":\"{{BoerrowerAddressCopy.text}}\",\n\t\t\"landMark\":\"{{BoerrowerLandmarkCopy.inputText.text}}\",\n\t\t\"alternativeNumbner\":\"{{boerrowerAlterNumberCopy.text}}\",\n\t},\n\t\"coBorrower\":{\n\t\t\t\"aadhaarNumber\":\"{{UCaadhar.text}}\",\n\t\t\"phoneNumber\":\"{{UCphone.text}}\",\n\t\t\"name\":\"{{UCname.text}}\",\n\t\t\"address\":\"{{UCaddress.text}}\",\n\t\t\"landMark\":\"{{UClandmark.text}}\",\n\t\t\"alternativeNumbner\":\"{{UCalter.text}}\",\n\t},\n\t\"reference\":{\n\t\t\"refferName\":\"{{refererNameCopy.text}}\",\n\t\t\"commisionType\":\"{{commisionSelectCopy.selectedOptionValue}}\",\n\t\t\"commisionAmount\":\"{{refererAmountCopy.text}}\"\n\t},\n\t\t\"vehicleDetails\":{\n\t\t\t\"makeId\":\"{{makeSelectCopy.selectedOptionValue}}\",\n\t\t\"model\":\"{{makeSelectCopy.selectedOptionLabel}}\",\n\t\t\t\t\"modelId\":\"{{modelSelectCopy.selectedOptionValue}}\",\n\t\t\"colour\":\"{{colourSelectCopy.selectedOptionLabel}}\",\n\t\t\t\"colourId\":\"{{colourSelectCopy.selectedOptionValue}}\",\n\t\t\"vehicleNumber\":\"{{vehcielNumberCopy.text}}\",\n\t\t\"monthYear\":\"{{monthyearCopy.selectedDate}}\",\n\t\t\"chassisNumber\":\"{{chassisNumberCopy.text}}\",\n\t\t\"engineNumber\":\"{{engineNumberCopy.text}}\",\n\t\t\"keyNumber\":\"{{keyNumberCopy.text}}\",\n\t\t\"dateOfReg\":\"{{dateOfRegCopy.selectedDate}}\"\t\n\t},\n\t\t\"insuranceDetails\":{\n\t\t\"insurance\":{\n\t\t\t\"insuranceNumber\":\"{{insuranceNumberCopy1.text}}\",\n\t\t\t\"companyName\":\"{{insuranceNumberCopyCopy.text}}\",\n\t\t\t\"expiryDate\":\"{{insuranceExpiryDateCopy.selectedDate}}\"\n\t\t},\n\t\t\"endrosenment\":{\n\t\t\t\"endrosenmentNumber\":\"{{endrosenmentNumberCopy.text}}\",\n\t\t\t\"endrosenmentDate\":\"{{endrosnmentDateCopy.selectedDate}}\"\n\t\t}\n\t},\n\t\"vehcileImage\":{\n\t},\n\t\t\"LoanDetails\":{\n\t\t\"Branch\":\"{{branchSelect.selectedOptionLabel}}\",\n\t\t\t\"BranchId\":\"{{branchSelectCopy.selectedOptionValue}}\",\n\t\t\"Date\":\"{{loanDeatDateCopy.formattedDate}}\",\n\t\t\"FinanceAmount\":\"{{financeAmountCopy.text}}\",\n\t\t\"ProcessingFees\":\"{{Input5Copy2Copy.text}}\",\n\t\t\"FinanceRate\":\"{{financeRateCopy.text}}\",\n\t\t\"LoanPeriod\":\"{{Input3Copy2Copy.text}}\",\n\t\t\"EMIAmount\":\"{{emiAmountCopy.text}}\",\n\t\t\"FirstEMIDue\":\"{{firstEmiDateCopy.formattedDate}}\",\n\t\t\"secondEMIdue\":\"{{secondEmiDateCopy.formattedDate}}\",\n\t\"ThirdEMIdue\":\"{{thirdEmiDateCopy.formattedDate}}\"\n\t},\n\"Remark\":{\n\t\"remark\":\"{{remarksCopy.text}}\"\n},\n\t\"PaymentType\":{\n\t\"area\":\"{{Select1Copy2Copy.selectedOptionLabel}}\",\n\t\t\t\"areaId\":\"{{Select1Copy2Copy.selectedOptionValue}}\",\n\t\"collectorName\":\"{{Select2Copy1Copy.selectedOptionLabel}}\",\n\t\t\t\"collectorId\":\"{{Select2Copy1Copy.selectedOptionValue}}\"\n\t}\n}}"
           }
         }
       }
@@ -99,10 +99,10 @@
     "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
-        "key": "formData.updateMany.query.data"
+        "key": "formData.updateMany.update.data"
       },
       {
-        "key": "formData.updateMany.update.data"
+        "key": "formData.updateMany.query.data"
       }
     ],
     "isValid": true,
@@ -110,7 +110,7 @@
     "messages": [],
     "jsonPathKeys": [
       "BoerrowerAddressCopy.text",
-      "BoerrowerLandmarkCopy.text",
+      "BoerrowerLandmarkCopy.inputText.text",
       "Input3Copy2Copy.text",
       "Input5Copy2Copy.text",
       "Select1Copy2Copy.selectedOptionLabel",
@@ -129,7 +129,7 @@
       "boerrowerAlterNumberCopy.text",
       "boerrowerNameCopy.text",
       "borrowerPhoneNumberCopy.text",
-      "branchSelectCopy.selectedOptionLabel",
+      "branchSelect.selectedOptionLabel",
       "branchSelectCopy.selectedOptionValue",
       "chassisNumberCopy.text",
       "colourSelectCopy.selectedOptionLabel",
@@ -149,8 +149,8 @@
       "insuranceNumberCopyCopy.text",
       "keyNumberCopy.text",
       "loanDeatDateCopy.formattedDate",
+      "makeSelectCopy.selectedOptionLabel",
       "makeSelectCopy.selectedOptionValue",
-      "modelSelectCopy.selectedOptionLabel",
       "modelSelectCopy.selectedOptionValue",
       "monthyearCopy.selectedDate",
       "refererAmountCopy.text",
