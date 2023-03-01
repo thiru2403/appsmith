@@ -25,7 +25,7 @@
             "data": "10"
           },
           "arrayPipelines": {
-            "data": "[\n  {\n    \n$lookup:\n            {\n                from: \"ManageBranch\",\n                let: { pid: \"$branchId\" },\n                pipeline: [\n                    {\n                        $match: {\n                            $expr: {\n                                $eq: [\"$_id\", { $toObjectId: \"$$pid\" }]\n                            }\n                        }\n                    }\n                ],\n                as: \"BranchDetails\"\n            }\n    },\n  \n]"
+            "data": "[\n  {\n    \n$lookup:\n            {\n                from: \"ManageBranch\",\n                let: { pid: \"$branchId\" },\n                pipeline: [\n                    {\n                        $match: {\n                            $expr: {\n                                $eq: [\"$_id\", { $toObjectId: \"$$pid\" }]\n                            }\n                        }\n                    }\n                ],\n                as: \"BranchDetails\"\n            }\n    }\n  \n]"
           }
         },
         "body": {
